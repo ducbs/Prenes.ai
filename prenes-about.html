@@ -378,6 +378,10 @@ footer{background:#04103f;padding:80px 0 26px;overflow:hidden;position:relative}
 @media (max-width:520px){.why5,.commit{grid-template-columns:1fr}.tier{grid-template-columns:40px 1fr}.tier em{display:none}}
 
 
+.logo svg.lk{height:36px;width:auto;display:block}
+.f-logo .logo svg.lk{height:clamp(54px,8vw,96px);width:auto}
+@media(max-width:600px){.logo svg.lk{height:28px}}
+
 /* ================= SERVICE PAGE ================= */
 section[id]{scroll-margin-top:130px}
 .p-hero{padding:140px 0 0;overflow:hidden;background:
@@ -677,13 +681,7 @@ section[id]{scroll-margin-top:130px}
 <header id="hdr">
   <div class="wrap nav">
     <a href="prenes-home.html" class="logo" aria-label="Prenes.ai home">
-      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
-        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fe3ff"/><stop offset="1" stop-color="#1f6bff"/></linearGradient></defs>
-        <path d="M9 35V6h11a9.5 9.5 0 0 1 0 19H9" fill="none" stroke="url(#lg)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
-        <path d="M30 26a13 13 0 0 1-4 7" fill="none" stroke="#25c4f2" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="20" cy="15.5" r="2.6" fill="#25c4f2"/>
-      </svg>
-      <span>Prenes<b>.ai</b></span>
+      <svg class="lk" viewBox="0 0 595 170" aria-hidden="true"><defs><linearGradient id="plh" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="140" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><path d="M28 154 V60 A42 42 0 1 1 70 102 H54" fill="none" stroke="url(#plh)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M135.4 69.2 A66 66 0 0 1 110.6 112.0" fill="none" stroke="#33e4ff" stroke-width="11" stroke-linecap="round"/><circle cx="70" cy="60" r="11" fill="#33e4ff"/><g transform="translate(180,54) scale(0.62)"><defs><linearGradient id="pwh" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="0" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><g><path d="M11.0 100 V11.0 H38 a28.0 28.0 0 0 1 0 56 H11.0" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M109.0 100 V11.0 H136 a28.0 28.0 0 0 1 0 56 H109.0 M132 67.0 L164 100" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M258 11.0 H209.0 V89.0 H258 M209.0 50 H250" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M280 0 H302 L328 62 V0 H350 V100 H328 L302 38 V100 H280 Z" fill="#ffffff"/><path d="M432 11.0 H383.0 V89.0 H432 M383.0 50 H424" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M510.8 17.9 A24 24 0 1 0 482 52" fill="none" stroke="url(#pwh)" stroke-width="22" stroke-linecap="round"/><path d="M496 48 A24 24 0 1 1 467.2 82.1" fill="none" stroke="url(#pwh)" stroke-width="22" stroke-linecap="round"/><rect x="540" y="78" width="22" height="22" fill="#33c0f0"/><circle cx="599" cy="73" r="18.0" fill="none" stroke="#33c0f0" stroke-width="18"/><rect x="616" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="14" width="18" height="18" fill="#33c0f0"/></g></g></svg>
     </a>
     <nav class="menu" id="menu">
       <a href="prenes-home.html">Home</a>
@@ -692,7 +690,7 @@ section[id]{scroll-margin-top:130px}
         <div class="dd-menu">
           <a href="prenes-service-a.html">Exposure Management &amp; Compliance<small>Assets, vulnerabilities, configuration, compliance</small></a>
           <a href="prenes-service-b.html">Monitoring &amp; Detection<small>24/7 SOC, SIEM + EDR, alerts with recommendations</small></a>
-          <a href="prenes-hardware.html">Hardware<small>TAP, Network Packet Broker, Sensor Platform</small></a>
+          <a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a>
         </div>
       </div>
       <a href="prenes-industries.html">Industries</a>
@@ -744,7 +742,7 @@ section[id]{scroll-margin-top:130px}
           </g>
           <circle cx="220" cy="220" r="96" fill="url(#eg)" filter="url(#eb)" opacity=".7"/>
           <circle cx="220" cy="220" r="86" fill="#0d2a8a" stroke="#aeeaff" stroke-opacity=".6"/>
-          <path d="M200 262V180h26a22 22 0 0 1 0 44h-26" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="226" cy="202" r="6" fill="#25c4f2"/>
+          <g transform="translate(163,150) scale(.82)"><path d="M28 154 V60 A42 42 0 1 1 70 102 H54" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M135.4 69.2 A66 66 0 0 1 110.6 112.0" fill="none" stroke="#33e4ff" stroke-width="11" stroke-linecap="round"/><circle cx="70" cy="60" r="11" fill="#33e4ff"/></g>
         </svg>
       </div>
     </div>
@@ -762,12 +760,13 @@ section[id]{scroll-margin-top:130px}
     <div class="txt">
       <h2 class="rv">Who<span class="hl">We Are</span></h2>
       <p class="rv">Prenes.ai helps organizations answer two questions: where are we exposed, and is someone attacking us right now? We combine exposure management, 24/7 monitoring and purpose-built hardware so customers can see their risk early and act on threats in time.</p>
+      <p class="rv">Prenes.ai plays two roles: an international managed security service provider, and a hardware vendor whose TAP, Packet Broker, Sensor Platform and upcoming AI servers carry the Prenes.ai name — with warranty, firmware and supply-chain responsibility to match.</p>
       <p class="rv">Our first market is Vietnam. Services are delivered together with strategic partners in Vietnam that hold all required licenses, and our monitoring platform is hosted in the country so monitoring data stays local.</p>
     </div>
     <div class="kfacts">
       <div class="card kf rv"><small>Customers</small><b>Banking, securities, insurance, fintech &amp; SMB</b></div>
-      <div class="card kf rv"><small>What we offer</small><b>Services · Monitoring platform · Hardware</b></div>
-      <div class="card kf rv"><small>Regional office</small><b>[Singapore / Malaysia — to be updated]</b></div>
+      <div class="card kf rv"><small>What we offer</small><b>Managed services · Monitoring platform · Hardware &amp; AI servers</b></div>
+      <div class="card kf rv"><small>Headquarters</small><b>Canada (planned) — Ontario / British Columbia</b></div>
       <div class="card kf rv"><small>In Vietnam</small><b>Licensed strategic partners · data hosted locally</b></div>
     </div>
   </div>
@@ -953,16 +952,13 @@ section[id]{scroll-margin-top:130px}
         <p class="f-tag">Prenes.ai — See your risk early.<br>Detect attacks in time.</p>
         <form class="news" onsubmit="return false"><input type="email" placeholder="Enter your email to receive threat advisories" aria-label="Email"><button aria-label="Subscribe">→</button></form>
       </div>
-      <div class="f-col office"><h4>Prenes.ai</h4><p>Regional office: [Singapore / Malaysia — to be updated]</p><p>Email: contact@prenes.ai</p></div>
+      <div class="f-col office"><h4>Prenes.ai</h4><p>Headquarters: Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
       <div class="f-col office"><h4>Vietnam</h4><p>Delivered with licensed strategic partners in Hanoi and Ho Chi Minh City.</p></div>
       <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
     <div class="f-logo">
       <svg class="waves l" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="wv"></g></svg>
-      <div class="logo">
-        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 35V6h11a9.5 9.5 0 0 1 0 19H9" fill="none" stroke="url(#lg)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 26a13 13 0 0 1-4 7" fill="none" stroke="#25c4f2" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="15.5" r="2.6" fill="#25c4f2"/></svg>
-        <span>Prenes<b>.ai</b></span>
-      </div>
+      <div class="logo" aria-label="Prenes.ai"><svg class="lk" viewBox="0 0 595 170" aria-hidden="true"><defs><linearGradient id="plf" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="140" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><path d="M28 154 V60 A42 42 0 1 1 70 102 H54" fill="none" stroke="url(#plf)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M135.4 69.2 A66 66 0 0 1 110.6 112.0" fill="none" stroke="#33e4ff" stroke-width="11" stroke-linecap="round"/><circle cx="70" cy="60" r="11" fill="#33e4ff"/><g transform="translate(180,54) scale(0.62)"><defs><linearGradient id="pwf" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="0" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><g><path d="M11.0 100 V11.0 H38 a28.0 28.0 0 0 1 0 56 H11.0" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M109.0 100 V11.0 H136 a28.0 28.0 0 0 1 0 56 H109.0 M132 67.0 L164 100" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M258 11.0 H209.0 V89.0 H258 M209.0 50 H250" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M280 0 H302 L328 62 V0 H350 V100 H328 L302 38 V100 H280 Z" fill="#ffffff"/><path d="M432 11.0 H383.0 V89.0 H432 M383.0 50 H424" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M510.8 17.9 A24 24 0 1 0 482 52" fill="none" stroke="url(#pwf)" stroke-width="22" stroke-linecap="round"/><path d="M496 48 A24 24 0 1 1 467.2 82.1" fill="none" stroke="url(#pwf)" stroke-width="22" stroke-linecap="round"/><rect x="540" y="78" width="22" height="22" fill="#33c0f0"/><circle cx="599" cy="73" r="18.0" fill="none" stroke="#33c0f0" stroke-width="18"/><rect x="616" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="14" width="18" height="18" fill="#33c0f0"/></g></g></svg></div>
       <svg class="waves r" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" class="wv2"></g></svg>
     </div>
     <div class="f-bot"><span>© 2026 Prenes.ai. All rights reserved.</span><span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span></div>

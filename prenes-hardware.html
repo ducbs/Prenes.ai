@@ -378,6 +378,10 @@ footer{background:#04103f;padding:80px 0 26px;overflow:hidden;position:relative}
 @media (max-width:520px){.why5,.commit{grid-template-columns:1fr}.tier{grid-template-columns:40px 1fr}.tier em{display:none}}
 
 
+.logo svg.lk{height:36px;width:auto;display:block}
+.f-logo .logo svg.lk{height:clamp(54px,8vw,96px);width:auto}
+@media(max-width:600px){.logo svg.lk{height:28px}}
+
 /* ================= SERVICE PAGE ================= */
 section[id]{scroll-margin-top:130px}
 .p-hero{padding:140px 0 0;overflow:hidden;background:
@@ -646,6 +650,18 @@ section[id]{scroll-margin-top:130px}
 .faq-vis .tl div{grid-template-columns:72px 14px 1fr}
 .faq-vis .tl div:not(:last-child)::before{left:86px}
 .hwpic{padding:26px}.hwpic svg{width:100%;height:auto}
+.ds-btn{padding:10px 18px;font-size:13px}
+.ai-soon{display:flex;gap:30px;align-items:center;justify-content:space-between;padding:34px 38px;margin-top:40px;border-color:rgba(37,196,242,.35)}
+.ai-soon .k{font-size:12px;letter-spacing:.14em;color:var(--cyan)}
+.ai-soon h3{font-size:26px;margin:8px 0 10px}
+.ai-soon p{color:var(--muted);max-width:720px}
+.ai-soon .note{font-size:13px;margin-top:10px;opacity:.85}
+.soon{font-style:normal;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#061247;background:var(--cyan);border-radius:20px;padding:4px 10px;vertical-align:middle;margin-left:8px}
+.ds-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.ds-card{padding:30px;display:block;transform:none}
+.ds-card .k{font-size:11px;letter-spacing:.14em;color:var(--cyan)}
+.ds-card h3{font-size:22px;margin:10px 0 8px}.ds-card p{color:var(--muted);font-size:14px;margin-bottom:18px}
+@media(max-width:900px){.ai-soon{flex-direction:column;align-items:flex-start;padding:26px}.ds-cards{grid-template-columns:minmax(0,1fr)}}
 
 </style>
 </head>
@@ -654,13 +670,7 @@ section[id]{scroll-margin-top:130px}
 <header id="hdr">
   <div class="wrap nav">
     <a href="prenes-home.html" class="logo" aria-label="Prenes.ai home">
-      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
-        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fe3ff"/><stop offset="1" stop-color="#1f6bff"/></linearGradient></defs>
-        <path d="M9 35V6h11a9.5 9.5 0 0 1 0 19H9" fill="none" stroke="url(#lg)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
-        <path d="M30 26a13 13 0 0 1-4 7" fill="none" stroke="#25c4f2" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="20" cy="15.5" r="2.6" fill="#25c4f2"/>
-      </svg>
-      <span>Prenes<b>.ai</b></span>
+      <svg class="lk" viewBox="0 0 595 170" aria-hidden="true"><defs><linearGradient id="plh" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="140" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><path d="M28 154 V60 A42 42 0 1 1 70 102 H54" fill="none" stroke="url(#plh)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M135.4 69.2 A66 66 0 0 1 110.6 112.0" fill="none" stroke="#33e4ff" stroke-width="11" stroke-linecap="round"/><circle cx="70" cy="60" r="11" fill="#33e4ff"/><g transform="translate(180,54) scale(0.62)"><defs><linearGradient id="pwh" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="0" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><g><path d="M11.0 100 V11.0 H38 a28.0 28.0 0 0 1 0 56 H11.0" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M109.0 100 V11.0 H136 a28.0 28.0 0 0 1 0 56 H109.0 M132 67.0 L164 100" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M258 11.0 H209.0 V89.0 H258 M209.0 50 H250" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M280 0 H302 L328 62 V0 H350 V100 H328 L302 38 V100 H280 Z" fill="#ffffff"/><path d="M432 11.0 H383.0 V89.0 H432 M383.0 50 H424" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M510.8 17.9 A24 24 0 1 0 482 52" fill="none" stroke="url(#pwh)" stroke-width="22" stroke-linecap="round"/><path d="M496 48 A24 24 0 1 1 467.2 82.1" fill="none" stroke="url(#pwh)" stroke-width="22" stroke-linecap="round"/><rect x="540" y="78" width="22" height="22" fill="#33c0f0"/><circle cx="599" cy="73" r="18.0" fill="none" stroke="#33c0f0" stroke-width="18"/><rect x="616" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="14" width="18" height="18" fill="#33c0f0"/></g></g></svg>
     </a>
     <nav class="menu" id="menu">
       <a href="prenes-home.html">Home</a>
@@ -669,7 +679,7 @@ section[id]{scroll-margin-top:130px}
         <div class="dd-menu">
           <a href="prenes-service-a.html">Exposure Management &amp; Compliance<small>Assets, vulnerabilities, configuration, compliance</small></a>
           <a href="prenes-service-b.html">Monitoring &amp; Detection<small>24/7 SOC, SIEM + EDR, alerts with recommendations</small></a>
-          <a href="prenes-hardware.html">Hardware<small>TAP, Network Packet Broker, Sensor Platform</small></a>
+          <a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a>
         </div>
       </div>
       <a href="prenes-industries.html">Industries</a>
@@ -695,15 +705,15 @@ section[id]{scroll-margin-top:130px}
     <div class="p-hero-in">
       <div>
         <h1 class="rv"><small>Prenes.ai Hardware</small>See Every Packet. Collect at the Edge.</h1>
-        <p class="lead rv">Network TAP, Network Packet Broker and Sensor Platform appliances under the Prenes.ai brand — sized and priced for financial institutions and mid-size networks, sold and supported through our partners.</p>
+        <p class="lead rv">Network TAP, Network Packet Broker and Sensor Platform appliances under the Prenes.ai brand — sized and priced for financial institutions and mid-size networks. AI servers join the line soon.</p>
         <ul class="ticks rv">
           <li>Prenes.ai-branded appliances, software preloaded where needed</li>
           <li>Built to work with Prenes.ai monitoring and with your existing tools</li>
-          <li>Bought through partners, with technical support from Prenes.ai</li>
+          <li>Bought directly from Prenes.ai by system integrators and end customers, with technical support from Prenes.ai</li>
         </ul>
         <div class="ctas rv">
           <a href="#interest" class="btn btn-light">Register interest ↗</a>
-          <a href="#products" class="btn btn-dark">See products</a>
+          <a href="#datasheets" class="btn btn-dark">Datasheets</a>
         </div>
       </div>
       <div class="hero-mock rv">
@@ -736,7 +746,7 @@ section[id]{scroll-margin-top:130px}
 </section>
 
 <nav class="subnav" aria-label="Section navigation"><div class="wrap">
-  <a href="#products" class="on">Products</a><a href="#together">How they work together</a><a href="#usecases">Use cases</a><a href="#buying">Buying &amp; support</a><a href="#trust">Supply chain &amp; compliance</a><a href="#faq">FAQ</a>
+  <a href="#products" class="on">Products</a><a href="#datasheets">Datasheets</a><a href="#together">How they work together</a><a href="#usecases">Use cases</a><a href="#buying">Buying &amp; support</a><a href="#trust">Supply chain &amp; compliance</a><a href="#faq">FAQ</a>
 </div></nav>
 
 <!-- ================= PRODUCTS ================= -->
@@ -756,7 +766,7 @@ section[id]{scroll-margin-top:130px}
           <li>Feeds monitoring and analysis tools with a full copy</li>
           <li>For data centers and key network points</li>
         </ul>
-        <div class="fchips"><span class="chip">Datasheet on request</span></div>
+        <div class="fchips"><a class="btn btn-dark ds-btn" href="prenes-datasheet-tap.html">View datasheet ↗</a></div>
       </div>
       <div class="card hwpic rv" style="transform:none"><svg viewBox="0 0 420 220" aria-hidden="true">
         <rect x="30" y="80" width="360" height="70" rx="8" fill="#0f1c58" stroke="#5b8cff"/>
@@ -779,7 +789,7 @@ section[id]{scroll-margin-top:130px}
           <li>Send copies to several tools at once</li>
           <li>Pairs naturally with Line B monitoring</li>
         </ul>
-        <div class="fchips"><span class="chip">Datasheet on request</span></div>
+        <div class="fchips"><a class="btn btn-dark ds-btn" href="prenes-datasheet-npb.html">View datasheet ↗</a></div>
       </div>
       <div class="card hwpic rv" style="transform:none"><svg viewBox="0 0 420 220" aria-hidden="true">
         <g font-family="Inter, sans-serif" font-size="11" fill="#94a1cc"><text x="10" y="44">TAP 1</text><text x="10" y="104">TAP 2</text><text x="10" y="164">TAP 3</text></g>
@@ -794,7 +804,7 @@ section[id]{scroll-margin-top:130px}
       <div class="ftext rv">
         <span class="k">03 — SENSOR PLATFORM</span>
         <h3>Prenes.ai Sensor Platform</h3>
-        <p>A purpose-built appliance running sensor and collector software. It gathers and pre-filters data at your site, then sends it securely to the monitoring platform.</p>
+        <p>Sensor and collector software delivered on standard server hardware. It gathers and pre-filters data at your site, then sends it securely to the monitoring platform.</p>
         <ul>
           <li>Software preloaded and configured</li>
           <li>Hardened OS, encrypted disk, dedicated admin account</li>
@@ -802,7 +812,7 @@ section[id]{scroll-margin-top:130px}
           <li>Health alerts for connectivity, disk and hardware</li>
           <li>The standard on-site box for Line B — or bought separately</li>
         </ul>
-        <div class="fchips"><span class="chip">Datasheet on request</span></div>
+        <div class="fchips"><a class="btn btn-dark ds-btn" href="prenes-datasheet-sensor.html">View datasheet ↗</a></div>
       </div>
       <div class="card hwpic rv" style="transform:none"><svg viewBox="0 0 420 220" aria-hidden="true">
         <rect x="30" y="60" width="200" height="100" rx="8" fill="#0f1c58" stroke="#25c4f2"/>
@@ -814,6 +824,26 @@ section[id]{scroll-margin-top:130px}
         <text x="280" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#aeeaff">encrypted</text>
         <rect x="334" y="80" width="76" height="60" rx="8" fill="rgba(27,79,217,.4)" stroke="#25c4f2"/><text x="372" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#fff">Platform</text><text x="372" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#94a1cc">in Vietnam</text>
       </svg></div>
+    </div>
+
+    <div class="card ai-soon rv" style="transform:none">
+      <div><span class="k">04 — AI SERVERS</span><h3>Prenes.ai AI Servers <em class="soon">Coming soon</em></h3>
+      <p>GPU servers for on-premises AI workloads — inference, model hosting and security analytics close to your data. Specifications, pricing and availability will be announced.</p>
+      <p class="note">High-end accelerators are subject to U.S. export controls. Each order is classified and screened, and an export license is obtained where required.</p></div>
+      <a href="#interest" class="btn btn-light">Register interest ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATASHEETS ================= -->
+<section class="sec black" id="datasheets">
+  <div class="wrap">
+    <h2 class="h-sec rv">Product<span>Datasheets</span></h2>
+    <p class="sub rv">Overview, features, deployment and specification layout for each appliance. Final model numbers and figures are confirmed with each quote.</p>
+    <div class="ds-cards">
+      <a class="card ds-card rv" href="prenes-datasheet-tap.html"><span class="k">DATASHEET · 01</span><h3>Network TAP</h3><p>Passive traffic copy for critical links.</p><span class="more">Open datasheet <span>↗</span></span></a>
+      <a class="card ds-card rv" href="prenes-datasheet-npb.html"><span class="k">DATASHEET · 02</span><h3>Network Packet Broker</h3><p>Aggregate, filter and distribute traffic to tools.</p><span class="more">Open datasheet <span>↗</span></span></a>
+      <a class="card ds-card rv" href="prenes-datasheet-sensor.html"><span class="k">DATASHEET · 03</span><h3>Sensor Platform</h3><p>Sensor &amp; collector software for 24/7 monitoring.</p><span class="more">Open datasheet <span>↗</span></span></a>
     </div>
   </div>
 </section>
@@ -871,12 +901,12 @@ section[id]{scroll-margin-top:130px}
 <section class="sec black" id="buying">
   <div class="wrap">
     <h2 class="h-sec rv">Buying<span>&amp; Support</span></h2>
-    <p class="sub rv">Prenes.ai hardware is sold through partners in Vietnam. Your partner handles local warranty; Prenes.ai provides technical support behind them.</p>
+    <p class="sub rv">System integrators and end customers buy directly from Prenes.ai; our authorized distributor can also resell. The buyer provides warranty in Vietnam, with Prenes.ai technical support behind them.</p>
     <div class="onb">
-      <div class="rv"><span class="wk">Buy</span><h3>Through a partner</h3><p>An SI partner or our authorized distributor quotes, delivers and installs.</p></div>
-      <div class="rv"><span class="wk">Support</span><h3>Prenes.ai behind them</h3><p>Technical support from Prenes.ai to your partner.</p></div>
-      <div class="rv"><span class="wk">Warranty</span><h3>Local, through your partner</h3><p>The partner you bought from checks the unit in Vietnam.</p></div>
-      <div class="rv"><span class="wk">Replacement</span><h3>RMA process</h3><p>Faulty units go back through Prenes.ai to the manufacturer for repair or replacement.</p></div>
+      <div class="rv"><span class="wk">Buy</span><h3>Direct from Prenes.ai</h3><p>System integrators and end customers order from Prenes.ai, or through our authorized distributor.</p></div>
+      <div class="rv"><span class="wk">Import</span><h3>Licensed importer</h3><p>The importing party in Vietnam — a licensed partner — pays in foreign currency and handles duties and VAT.</p></div>
+      <div class="rv"><span class="wk">Warranty</span><h3>Local, by the buyer</h3><p>The integrator or distributor that bought the unit checks it in Vietnam; Prenes.ai supports them technically.</p></div>
+      <div class="rv"><span class="wk">Replacement</span><h3>RMA process</h3><p>Faulty units go back to Prenes.ai, then to the manufacturer for repair or replacement.</p></div>
     </div>
   </div>
 </section>
@@ -889,10 +919,11 @@ section[id]{scroll-margin-top:130px}
     <div class="compl">
       <div class="card rv"><h3>Manufacturing commitments</h3><div class="s">Brand-name manufacturing</div><p>Manufacturing agreements require no hidden code or backdoors, allow inspection and define who maintains firmware.</p></div>
       <div class="card rv"><h3>Firmware maintenance</h3><div class="s">Throughout the product life</div><p>Security fixes delivered through Prenes.ai and your partner.</p></div>
-      <div class="card rv"><h3>Licensed import</h3><div class="s">Decree 332/2026/NĐ-CP</div><p>Monitoring products are imported and supplied in Vietnam only through partners holding the required licenses.</p></div>
+      <div class="card rv"><h3>Licensed import</h3><div class="s">Sensor Platform · Decree 332/2026/NĐ-CP</div><p>Sensor Platform runs monitoring software, so it is imported and supplied in Vietnam only through partners holding the required licenses. TAP and Packet Broker are supplied as standard network equipment.</p></div>
+      <div class="card rv"><h3>Truthful origin</h3><div class="s">Label matches paperwork</div><p>Country of origin is declared where each unit is actually made. A Canada / U.S. assembly program for tenders that require G7 origin is in preparation.</p></div>
       <div class="card rv"><h3>Second source</h3><div class="s">Continuity of supply</div><p>Agreements plan for an alternative manufacturer so your deployment is not tied to a single factory.</p></div>
     </div>
-    <p class="cmp-note">Availability of each product in Vietnam depends on import licensing. Contact us for current status.</p>
+    <p class="cmp-note">Availability of Sensor Platform in Vietnam depends on import licensing. Contact us for current status and origin documents.</p>
   </div>
 </section>
 
@@ -904,9 +935,10 @@ section[id]{scroll-margin-top:130px}
       <div class="acc">
         <div class="qa open"><button>Do I need to buy hardware to use Line B monitoring?</button><div class="ans"><div>No. Where on-site collection is needed, a sensor box is rented as part of your Line B package.</div></div></div>
         <div class="qa"><button>Can I use the TAP and Packet Broker with other tools?</button><div class="ans"><div>Yes. They send traffic copies to any monitoring or analysis tool, including tools from other vendors.</div></div></div>
-        <div class="qa"><button>Who provides warranty?</button><div class="ans"><div>The partner you bought from provides warranty in Vietnam. Prenes.ai supports the partner technically and handles replacements with the manufacturer.</div></div></div>
-        <div class="qa"><button>Where can I see specifications?</button><div class="ans"><div>Datasheets for each model are available on request through your partner or from Prenes.ai.</div></div></div>
-        <div class="qa"><button>When is hardware available?</button><div class="ans"><div>Availability follows import licensing in Vietnam. Register your interest and we will confirm timing for your project.</div></div></div>
+        <div class="qa"><button>Who provides warranty?</button><div class="ans"><div>The integrator or distributor you bought from provides warranty in Vietnam. Prenes.ai supports them technically and handles replacements with the manufacturer.</div></div></div>
+        <div class="qa"><button>Where can I see specifications?</button><div class="ans"><div>Each product has a datasheet on this site. Final model numbers and figures are confirmed in your quote.</div></div></div>
+        <div class="qa"><button>When is hardware available?</button><div class="ans"><div>TAP and Packet Broker follow normal delivery lead times; Sensor Platform availability also follows import licensing in Vietnam. Register your interest and we will confirm timing for your project.</div></div></div>
+        <div class="qa"><button>Can I get G7 (Canada / U.S.) origin?</button><div class="ans"><div>A Canada / U.S. assembly program is in preparation for tenders that require G7 origin. Until it is ready, units ship with their true Asian origin for customers who accept it. We never label origin differently from the documents.</div></div></div>
       </div>
     </div>
     <div class="faq-vis rv" id="interest">
@@ -950,16 +982,13 @@ section[id]{scroll-margin-top:130px}
         <p class="f-tag">Prenes.ai — See your risk early.<br>Detect attacks in time.</p>
         <form class="news" onsubmit="return false"><input type="email" placeholder="Enter your email to receive threat advisories" aria-label="Email"><button aria-label="Subscribe">→</button></form>
       </div>
-      <div class="f-col office"><h4>Prenes.ai</h4><p>Regional office: [Singapore / Malaysia — to be updated]</p><p>Email: contact@prenes.ai</p></div>
+      <div class="f-col office"><h4>Prenes.ai</h4><p>Headquarters: Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
       <div class="f-col office"><h4>Vietnam</h4><p>Delivered with licensed strategic partners in Hanoi and Ho Chi Minh City.</p></div>
       <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
     <div class="f-logo">
       <svg class="waves l" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="wv"></g></svg>
-      <div class="logo">
-        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 35V6h11a9.5 9.5 0 0 1 0 19H9" fill="none" stroke="url(#lg)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 26a13 13 0 0 1-4 7" fill="none" stroke="#25c4f2" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="15.5" r="2.6" fill="#25c4f2"/></svg>
-        <span>Prenes<b>.ai</b></span>
-      </div>
+      <div class="logo" aria-label="Prenes.ai"><svg class="lk" viewBox="0 0 595 170" aria-hidden="true"><defs><linearGradient id="plf" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="140" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><path d="M28 154 V60 A42 42 0 1 1 70 102 H54" fill="none" stroke="url(#plf)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M135.4 69.2 A66 66 0 0 1 110.6 112.0" fill="none" stroke="#33e4ff" stroke-width="11" stroke-linecap="round"/><circle cx="70" cy="60" r="11" fill="#33e4ff"/><g transform="translate(180,54) scale(0.62)"><defs><linearGradient id="pwf" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="0" y2="0"><stop offset="0" stop-color="#0f46d6"/><stop offset="1" stop-color="#33e4ff"/></linearGradient></defs><g><path d="M11.0 100 V11.0 H38 a28.0 28.0 0 0 1 0 56 H11.0" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M109.0 100 V11.0 H136 a28.0 28.0 0 0 1 0 56 H109.0 M132 67.0 L164 100" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M258 11.0 H209.0 V89.0 H258 M209.0 50 H250" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M280 0 H302 L328 62 V0 H350 V100 H328 L302 38 V100 H280 Z" fill="#ffffff"/><path d="M432 11.0 H383.0 V89.0 H432 M383.0 50 H424" fill="none" stroke="#ffffff" stroke-width="22"/><path d="M510.8 17.9 A24 24 0 1 0 482 52" fill="none" stroke="url(#pwf)" stroke-width="22" stroke-linecap="round"/><path d="M496 48 A24 24 0 1 1 467.2 82.1" fill="none" stroke="url(#pwf)" stroke-width="22" stroke-linecap="round"/><rect x="540" y="78" width="22" height="22" fill="#33c0f0"/><circle cx="599" cy="73" r="18.0" fill="none" stroke="#33c0f0" stroke-width="18"/><rect x="616" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="44" width="18" height="56" fill="#33c0f0"/><rect x="644" y="14" width="18" height="18" fill="#33c0f0"/></g></g></svg></div>
       <svg class="waves r" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" class="wv2"></g></svg>
     </div>
     <div class="f-bot"><span>© 2026 Prenes.ai. All rights reserved.</span><span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span></div>
