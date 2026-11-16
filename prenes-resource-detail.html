@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Phishing Kits Impersonating Mobile Banking Apps — Prenes.ai</title>
-<meta name="description" content="How adversary-in-the-middle phishing kits relay banking credentials and OTPs in real time: indicators, ATT&amp;CK mapping, detections and recommendations.">
+<title>Phishing kits impersonating mobile banking apps — Prenes.ai</title>
+<meta name="description" content="Adversary-in-the-middle phishing kits relay credentials and OTPs in real time. Indicators, detections and recommendations for banks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -638,27 +638,28 @@ section[id]{scroll-margin-top:130px}
     <nav class="menu" id="menu">
       <a href="prenes-home.html">Home</a>
       <div class="dd">
-        <a href="prenes-home.html#solutions">Solutions<span class="caret">▾</span></a>
-        <div class="dd-menu">
-          <a href="prenes-service-a.html">Exposure Management &amp; Compliance<small>Assets, vulnerabilities, configuration, compliance</small></a>
-          <a href="prenes-service-b.html">Monitoring &amp; Detection<small>24/7 SOC, SIEM + EDR, alerts with recommendations</small></a>
-          <a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a>
-        </div>
+        <a href="prenes-products.html">Products<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-products.html#software">Security Platform Software<small>SIEM with AI analytics, multi-tenant, partner toolkit</small></a><a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a><a href="prenes-hardware.html#datasheets">Datasheets<small>TAP · Packet Broker · Sensor Platform</small></a></div>
       </div>
-      <a href="prenes-industries.html">Industries</a>
-      <a href="prenes-packages.html">Packages</a>
-      <a href="prenes-platform.html">Platform</a>
+      <div class="dd">
+        <a href="prenes-services.html">Services<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-service-b.html">Managed Detection &amp; Response<small>24/7 monitoring and response by certified partners</small></a><a href="prenes-service-a.html">Exposure &amp; Compliance<small>Assets, vulnerabilities, configuration, reports</small></a><a href="prenes-packages.html">Subscription Tiers<small>Essentials · Professional · Enterprise</small></a><a href="prenes-services.html#professional">Professional Services<small>Assessment, pentest, SOC advisory, training</small></a></div>
+      </div>
+      <div class="dd">
+        <a href="prenes-solutions.html">Solutions<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-solution-banking.html">Banking<small>Core banking, SWIFT, cards, digital channels</small></a><a href="prenes-solution-insurance.html">Insurance<small>Policyholder data, agents, legacy systems</small></a><a href="prenes-solution-securities.html">Capital Markets<small>Trading, back office, investor portals</small></a><a href="prenes-solution-fintech.html">Fintech &amp; E-wallets<small>Cloud-native, API-first</small></a><a href="prenes-solution-lenders.html">Credit Institutions<small>Lenders and credit unions</small></a><a href="prenes-solution-platform.html">Platform &amp; Architecture<small>How data flows, hosting, trust</small></a></div>
+      </div>
+      <a href="prenes-partners.html">Partners</a>
       <a href="prenes-resources.html" class="on">Resources</a>
-      <a href="prenes-about.html">About</a>
-      <a href="prenes-contact.html">Contact</a>
+      <a href="prenes-about.html">About us</a>
     </nav>
     <div class="nav-r">
-      <span class="lang"><b>EN</b> / VI</span>
-      <a href="prenes-home.html#assessment" class="btn btn-light">Get Assessment</a>
+      <a href="prenes-partners.html#locator" class="btn btn-light">Find a Partner</a>
       <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i><i></i></button>
     </div>
   </div>
 </header>
+
 
 <div class="progress" id="progress" aria-hidden="true"></div>
 
@@ -780,8 +781,8 @@ section[id]{scroll-margin-top:130px}
         <table class="atbl">
           <thead><tr><th>Type</th><th>Indicator / pattern</th><th>Notes</th></tr></thead>
           <tbody>
-            <tr><td>Domain pattern</td><td><code>&lt;bank&gt;-xacthuc[.]example</code></td><td>Bank name + Vietnamese "verify"</td></tr>
-            <tr><td>Domain pattern</td><td><code>&lt;bank&gt;-hoantien[.]example</code></td><td>Bank name + "refund"</td></tr>
+            <tr><td>Domain pattern</td><td><code>&lt;bank&gt;-verify[.]example</code></td><td>Bank name + "verify"</td></tr>
+            <tr><td>Domain pattern</td><td><code>&lt;bank&gt;-refund[.]example</code></td><td>Bank name + "refund"</td></tr>
             <tr><td>Domain pattern</td><td><code>m-&lt;bank&gt;-support[.]example</code></td><td>Mobile-themed subdomains</td></tr>
             <tr><td>IP address</td><td><code>203.0.113[.]47</code></td><td>Reverse-proxy host (example)</td></tr>
             <tr><td>IP address</td><td><code>198.51.100[.]12</code></td><td>Operator login source (example)</td></tr>
@@ -827,7 +828,7 @@ section[id]{scroll-margin-top:130px}
       <p>Tick off items as your team completes them.</p>
       <h3>Security &amp; fraud teams</h3>
       <ul class="checklist">
-        <li><i class="bx"></i><span>Enable look-alike domain and certificate-transparency monitoring<small>Include Vietnamese keywords such as "xacthuc", "hoantien", "hotro".</small></span></li>
+        <li><i class="bx"></i><span>Enable look-alike domain and certificate-transparency monitoring<small>Include local-language keywords for "verify", "refund" and "support".</small></span></li>
         <li><i class="bx"></i><span>Alert on OTP verification from a different ASN than the requesting session</small></span></li>
         <li><i class="bx"></i><span>Add a cooling-off period for new devices and new beneficiaries<small>Delay high-value transfers from a device registered in the last 24 hours.</small></span></li>
         <li><i class="bx"></i><span>Pre-agree takedown procedures with registrars and hosting providers</span></li>
@@ -843,14 +844,14 @@ section[id]{scroll-margin-top:130px}
       <div>
         <span class="eyebrow">How Prenes.ai helps</span>
         <h3 style="margin-top:8px">See the look-alike. Get alerted on the login.</h3>
-        <p>Exposure Management (A2) watches for look-alike domains and new exposures of your brand. Monitoring &amp; Detection (B3) applies these login analytics to your identity and banking logs and alerts your team with clear recommendations — your team decides the response.</p>
+        <p>Exposure &amp; Compliance watches for look-alike domains and new exposures of your brand. Detection &amp; Response applies these login analytics to your identity and banking logs, so your MSSP partner can act on the session — with your approval for critical actions.</p>
       </div>
-      <a href="prenes-industry-banking.html" class="btn btn-light">Banking security ↗</a>
+      <a href="prenes-solution-banking.html" class="btn btn-light">Banking security ↗</a>
     </div>
 
     <div class="author">
       <div class="av">TI</div>
-      <div><b>Prenes.ai Threat Intelligence Team</b><span>Research by Prenes.ai SOC analysts and threat hunters.</span></div>
+      <div><b>Prenes.ai Threat Research</b><span>Research by Prenes.ai detection engineers, shared with the partner network.</span></div>
     </div>
 
     <div class="a-foot">
@@ -904,12 +905,12 @@ section[id]{scroll-margin-top:130px}
       <a href="#" class="card adv rv">
         <div class="art" style="background:radial-gradient(70% 90% at 30% 70%,#3ee0a133,transparent),linear-gradient(200deg,#0a1a6b,#02061c)"><svg viewBox="0 0 200 150" style="position:absolute;inset:0;width:100%;height:100%"><g fill="none" stroke="#3ee0a1" stroke-opacity=".7"><rect x="70" y="30" width="60" height="85" rx="4"/><path d="M82 55l6 6 12-12M82 80h36M82 95h24"/></g></svg></div>
         <div class="meta">OCT 2026 · <b>Compliance</b></div>
-        <h3>Cybersecurity Law 2025 and Decree 332/2026: what changes for BFSI</h3>
+        <h3>DORA for non-EU financial groups: what security monitoring must prove</h3>
       </a>
       <a href="#" class="card adv rv">
         <div class="art" style="background:radial-gradient(60% 80% at 40% 40%,#25c4f233,transparent),linear-gradient(180deg,#1f45e0,#02061c)"><svg viewBox="0 0 200 150" style="position:absolute;inset:0;width:100%;height:100%"><g fill="none" stroke="#aeeaff" stroke-opacity=".6"><rect x="60" y="25" width="80" height="100" rx="10"/><path d="M85 60h30M85 75h30M85 90h18"/></g><circle cx="140" cy="40" r="10" fill="#ff5d7a" fill-opacity=".8"/></svg></div>
         <div class="meta">SEP 2026 · <b>Guide</b></div>
-        <h3>TCVN 14423:2026 basic requirements: a practical checklist</h3>
+        <h3>PCI DSS v4.0 logging requirements: a practical checklist</h3>
       </a>
     </div>
   </div>
@@ -918,33 +919,33 @@ section[id]{scroll-margin-top:130px}
 <section class="cta black" style="border-top:1px solid #0d1230">
   <div class="wrap">
     <h2 class="rv">Is Your Brand Being<br>Impersonated Right Now?</h2>
-    <p class="rv">Start with a 4-week exposure assessment through a Prenes.ai partner.</p>
-    <div class="ctas rv"><a href="prenes-packages.html#quote" class="btn btn-dark">Contact us</a><a href="prenes-service-a.html" class="btn btn-light">Exposure Management</a></div>
+    <p class="rv">Talk to a certified Prenes.ai partner about brand and login monitoring.</p>
+    <div class="ctas rv"><a href="prenes-partners.html#locator" class="btn btn-dark">Find a partner</a><a href="prenes-service-a.html" class="btn btn-light">Exposure &amp; Compliance</a></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="f-top">
-      <div class="f-col"><h4>Solutions</h4><ul><li><a href="prenes-service-a.html">Exposure Management</a></li><li><a href="prenes-service-b.html">Monitoring &amp; Detection</a></li><li><a href="prenes-hardware.html">Hardware</a></li><li><a href="prenes-packages.html">Packages</a></li></ul></div>
-      <div class="f-col"><h4>Company</h4><ul><li><a href="prenes-about.html">About Prenes.ai</a></li><li><a href="prenes-partners.html">Partners</a></li><li><a href="prenes-about.html#careers">Careers</a></li><li><a href="prenes-contact.html">Contact</a></li></ul></div>
-      <div class="f-col"><h4>Industries &amp; Resources</h4>
+      <div class="f-col"><h4>Products &amp; Services</h4><ul><li><a href="prenes-products.html">Security Platform</a></li><li><a href="prenes-hardware.html">Hardware</a></li><li><a href="prenes-service-b.html">Managed Detection &amp; Response</a></li><li><a href="prenes-service-a.html">Exposure &amp; Compliance</a></li><li><a href="prenes-services.html#professional">Professional Services</a></li></ul></div>
+      <div class="f-col"><h4>Company</h4><ul><li><a href="prenes-about.html">About us</a></li><li><a href="prenes-partners.html">Partner Program</a></li><li><a href="prenes-solution-platform.html#trust">Trust &amp; Security</a></li><li><a href="prenes-about.html#careers">Careers</a></li><li><a href="prenes-about.html#contact">Contact</a></li></ul></div>
+      <div class="f-col"><h4>Solutions &amp; Resources</h4>
         <ul style="display:grid;grid-template-columns:1fr 1fr;gap:9px 30px">
-          <li><a href="prenes-industry-banking.html">Banking</a></li><li><a href="prenes-resources.html">Threat Advisory</a></li>
-          <li><a href="prenes-industry-securities.html">Securities</a></li><li><a href="prenes-resources.html?cat=Compliance">Compliance Guides</a></li>
-          <li><a href="prenes-industry-insurance.html">Insurance</a></li><li><a href="prenes-platform.html">Platform &amp; Data</a></li>
-          <li><a href="prenes-industry-fintech.html">Fintech</a></li><li><a href="#">FAQ</a></li>
-          <li><a href="prenes-industry-smb.html">SMB</a></li>
+          <li><a href="prenes-solution-banking.html">Banking</a></li><li><a href="prenes-resources.html">Threat Research</a></li>
+          <li><a href="prenes-solution-insurance.html">Insurance</a></li><li><a href="prenes-resources.html?cat=Compliance">Compliance Guides</a></li>
+          <li><a href="prenes-solution-securities.html">Capital Markets</a></li><li><a href="prenes-solution-platform.html">Platform</a></li>
+          <li><a href="prenes-solution-fintech.html">Fintech</a></li><li><a href="prenes-hardware.html#datasheets">Datasheets</a></li>
+          <li><a href="prenes-solution-lenders.html">Credit Institutions</a></li>
         </ul></div>
     </div>
     <div class="f-mid">
       <div>
-        <p class="f-tag">Prenes.ai — See your risk early.<br>Detect attacks in time.</p>
-        <form class="news" onsubmit="return false"><input type="email" placeholder="Enter your email to receive threat advisories" aria-label="Email"><button aria-label="Subscribe">→</button></form>
+        <p class="f-tag">Prenes.ai — Security platform for financial services.<br>Delivered by certified partners.</p>
+        <form class="news" onsubmit="return false"><input type="email" placeholder="Get threat research for financial services" aria-label="Email"><button aria-label="Subscribe">→</button></form>
       </div>
-      <div class="f-col office"><h4>Prenes.ai</h4><p>Headquarters: Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
-      <div class="f-col office"><h4>Vietnam</h4><p>Delivered with licensed strategic partners in Hanoi and Ho Chi Minh City.</p></div>
-      <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div>
+      <div class="f-col office"><h4>Headquarters</h4><p>Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
+      <div class="f-col office"><h4>Regions</h4><p>Asia-Pacific · Middle East &amp; Africa · Europe &amp; North America — through certified partners.</p></div>
+      <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">X</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
     <div class="f-logo">
       <svg class="waves l" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="wv"></g></svg>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — Prenes.ai</title>
-<meta name="description" content="Prenes.ai is an international cybersecurity brand offering managed services, a monitoring platform and hardware, delivered in Vietnam with licensed strategic partners.">
+<title>About us — Prenes.ai</title>
+<meta name="description" content="Prenes.ai is a cybersecurity vendor for financial services, headquartered in Canada (planned), selling a platform, hardware and services through certified partners.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -674,6 +674,65 @@ section[id]{scroll-margin-top:130px}
 .sweep{transform-origin:0 0;animation:spin 6s linear infinite}
 @media (prefers-reduced-motion:reduce){.sweep{animation:none}}
 
+.c-hero{position:relative;overflow:hidden;padding:150px 0 90px;background:radial-gradient(55% 70% at 75% 45%,rgba(31,69,224,.4),transparent 70%),linear-gradient(180deg,#040b30,#061247)}
+.c-hero #wave{position:absolute;right:-4%;top:40px;width:58%;height:80%;opacity:.9}
+.c-hero .horizon{position:absolute;left:35%;right:0;bottom:60px;height:1px;background:linear-gradient(90deg,transparent,rgba(80,160,255,.9) 55%,transparent)}
+.c-hero-in{position:relative;z-index:2}
+.c-hero h1{font-size:clamp(44px,6vw,76px);color:var(--cyan);margin-top:24px}
+.c-sub{color:#c3cdf0;font-size:16px;margin-top:6px}
+.offices{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:70px;max-width:980px}
+.office-b h3{font-family:Inter;font-weight:600;font-size:16px;padding-bottom:12px;border-bottom:1px solid var(--line);position:relative;margin-bottom:14px}
+.office-b h3::after{content:"";position:absolute;left:0;bottom:-1px;width:60px;height:1px;background:var(--cyan)}
+.office-b p{color:#c3cdf0;font-size:13.5px;margin-top:6px}
+.talk{position:relative;padding:90px 0;background:
+  repeating-linear-gradient(0deg,rgba(130,165,255,.05) 0 1px,transparent 1px 40px),
+  repeating-linear-gradient(90deg,rgba(130,165,255,.05) 0 1px,transparent 1px 40px),#0a1450}
+.talk-in{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+.topics h2{font-size:clamp(32px,4vw,48px)}
+.tp-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.tp{text-align:left;padding:18px 18px;display:flex;flex-direction:column;gap:4px;cursor:pointer}
+.tp b{font-weight:600;font-size:14.5px}
+.tp span{color:var(--muted);font-size:12.5px}
+.tp.on{border-color:var(--cyan);background:linear-gradient(180deg,rgba(37,196,242,.16),rgba(10,24,92,.4))}
+.tp.on b{color:var(--cyan)}
+.existing{margin-top:26px;padding:18px 20px;border-left:2px solid var(--ok);background:rgba(62,224,161,.06);border-radius:0 8px 8px 0}
+.existing b{color:var(--ok);font-weight:600;font-size:14px}
+.existing p{color:#c3cdf0;font-size:13.5px;margin-top:4px}
+form.lt{background:#000;border-radius:14px;padding:44px;border:1px solid #1a2148;box-shadow:0 40px 80px rgba(0,0,0,.45)}
+form.lt h2{font-size:clamp(34px,4vw,50px);color:var(--cyan)}
+.lt-sub{color:#c3cdf0;margin:8px 0 26px}
+.lt-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.lt-grid .full{grid-column:1/-1}
+.lt label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+.lt label i{color:var(--crit);font-style:normal}
+.lt input,.lt select,.lt textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #2b3466;color:var(--text);font:inherit;font-size:14.5px;padding:8px 0;outline:none;border-radius:0}
+.lt select{appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2394a1cc' stroke-width='1.4'/%3E%3C/svg%3E") right 4px center/11px no-repeat;padding-right:22px}
+.lt select option{background:#050d36;color:#e8eefc}
+.lt textarea{resize:vertical;min-height:70px}
+.lt input:focus,.lt select:focus,.lt textarea:focus{border-color:var(--cyan)}
+.lt input:user-invalid{border-color:var(--crit)}
+.lt .chk{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--muted)}
+.lt .chk input{width:auto;margin-top:3px;accent-color:var(--cyan)}
+.lt .actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.lt .ok{display:none;color:var(--ok);font-size:13.5px}
+.lt.sent .ok{display:block}
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px}
+.way{padding:26px;display:flex;flex-direction:column}
+.way .ic{width:40px;height:40px;border-radius:9px;display:grid;place-items:center;background:var(--cyan-dim);border:1px solid rgba(37,196,242,.35);color:var(--cyan);margin-bottom:16px}
+.way h3{font-family:Inter;font-weight:600;font-size:16px}
+.way p{color:#c3cdf0;font-size:14px;margin:6px 0 14px}
+.way .more{margin-top:auto}
+@media (max-width:1080px){.talk-in{grid-template-columns:1fr}}
+@media (max-width:820px){
+  .c-hero{padding:120px 0 60px}.c-hero #wave{width:120%;right:-30%;opacity:.4}
+  .offices{grid-template-columns:1fr;gap:26px;margin-top:40px}
+  form.lt{padding:26px}.lt-grid{grid-template-columns:1fr}
+  .ways{grid-template-columns:1fr}
+}
+@media (max-width:520px){.tp-list{grid-template-columns:1fr}}
+
+
+.offices{margin-top:30px}
 </style>
 </head>
 <body>
@@ -686,40 +745,41 @@ section[id]{scroll-margin-top:130px}
     <nav class="menu" id="menu">
       <a href="prenes-home.html">Home</a>
       <div class="dd">
-        <a href="prenes-home.html#solutions">Solutions<span class="caret">▾</span></a>
-        <div class="dd-menu">
-          <a href="prenes-service-a.html">Exposure Management &amp; Compliance<small>Assets, vulnerabilities, configuration, compliance</small></a>
-          <a href="prenes-service-b.html">Monitoring &amp; Detection<small>24/7 SOC, SIEM + EDR, alerts with recommendations</small></a>
-          <a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a>
-        </div>
+        <a href="prenes-products.html">Products<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-products.html#software">Security Platform Software<small>SIEM with AI analytics, multi-tenant, partner toolkit</small></a><a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a><a href="prenes-hardware.html#datasheets">Datasheets<small>TAP · Packet Broker · Sensor Platform</small></a></div>
       </div>
-      <a href="prenes-industries.html">Industries</a>
-      <a href="prenes-packages.html">Packages</a>
-      <a href="prenes-platform.html">Platform</a>
+      <div class="dd">
+        <a href="prenes-services.html">Services<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-service-b.html">Managed Detection &amp; Response<small>24/7 monitoring and response by certified partners</small></a><a href="prenes-service-a.html">Exposure &amp; Compliance<small>Assets, vulnerabilities, configuration, reports</small></a><a href="prenes-packages.html">Subscription Tiers<small>Essentials · Professional · Enterprise</small></a><a href="prenes-services.html#professional">Professional Services<small>Assessment, pentest, SOC advisory, training</small></a></div>
+      </div>
+      <div class="dd">
+        <a href="prenes-solutions.html">Solutions<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-solution-banking.html">Banking<small>Core banking, SWIFT, cards, digital channels</small></a><a href="prenes-solution-insurance.html">Insurance<small>Policyholder data, agents, legacy systems</small></a><a href="prenes-solution-securities.html">Capital Markets<small>Trading, back office, investor portals</small></a><a href="prenes-solution-fintech.html">Fintech &amp; E-wallets<small>Cloud-native, API-first</small></a><a href="prenes-solution-lenders.html">Credit Institutions<small>Lenders and credit unions</small></a><a href="prenes-solution-platform.html">Platform &amp; Architecture<small>How data flows, hosting, trust</small></a></div>
+      </div>
+      <a href="prenes-partners.html">Partners</a>
       <a href="prenes-resources.html">Resources</a>
-      <a href="prenes-about.html" class="on">About</a>
-      <a href="prenes-contact.html">Contact</a>
+      <a href="prenes-about.html" class="on">About us</a>
     </nav>
     <div class="nav-r">
-      <span class="lang"><b>EN</b> / VI</span>
-      <a href="prenes-home.html#assessment" class="btn btn-light">Get Assessment</a>
+      <a href="prenes-partners.html#locator" class="btn btn-light">Find a Partner</a>
       <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i><i></i></button>
     </div>
   </div>
 </header>
 
+
 <!-- ================= PAGE HERO ================= -->
 <section class="p-hero">
   <svg class="lines" viewBox="0 0 240 420" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="hl"></g></svg>
   <div class="wrap">
-    <nav class="crumb rv" aria-label="Breadcrumb"><a href="prenes-home.html">Home</a><i></i><span>About</span></nav>
+    <nav class="crumb rv" aria-label="Breadcrumb"><a href="prenes-home.html">Home</a><i></i><span>About us</span></nav>
     <div class="p-hero-in">
       <div>
-        <h1 class="rv"><small>About Prenes.ai</small>See Risk Early. Detect Attacks in Time.</h1>
-        <p class="lead rv">Prenes.ai is an international cybersecurity brand offering managed services, a monitoring platform and network visibility hardware — built for financial institutions and growing businesses, and delivered in Vietnam with licensed strategic partners.</p>
+        <h1 class="rv"><small>About us</small>A Security Vendor for Financial Services</h1>
+        <p class="lead rv">Prenes.ai is a cybersecurity vendor headquartered in Canada (planned), selling a security platform, collection hardware and professional services to banks, insurers, capital markets firms and fintechs — through a network of certified MSSP and reseller partners.</p>
         <div class="ctas rv">
           <a href="#who" class="btn btn-light">Who we are ↓</a>
-          <a href="#careers" class="btn btn-dark">Careers</a>
+          <a href="#contact" class="btn btn-dark">Contact us</a>
         </div>
       </div>
       <div class="emblem rv">
@@ -751,7 +811,7 @@ section[id]{scroll-margin-top:130px}
 </section>
 
 <nav class="subnav" aria-label="Section navigation"><div class="wrap">
-  <a href="#who" class="on">Who we are</a><a href="#mission">Mission</a><a href="#principles">Principles</a><a href="#vietnam">In Vietnam</a><a href="#team">Team</a><a href="#standards">Standards</a><a href="#roadmap">Roadmap</a><a href="#careers">Careers</a>
+  <a href="#who" class="on">Who we are</a><a href="#mission">Mission</a><a href="#principles">Principles</a><a href="#model">How we work</a><a href="#team">Team</a><a href="#standards">Standards</a><a href="#roadmap">Roadmap</a><a href="#careers">Careers</a><a href="#contact">Contact</a>
 </div></nav>
 
 <!-- ================= WHO WE ARE ================= -->
@@ -759,15 +819,14 @@ section[id]{scroll-margin-top:130px}
   <div class="wrap who">
     <div class="txt">
       <h2 class="rv">Who<span class="hl">We Are</span></h2>
-      <p class="rv">Prenes.ai helps organizations answer two questions: where are we exposed, and is someone attacking us right now? We combine exposure management, 24/7 monitoring and purpose-built hardware so customers can see their risk early and act on threats in time.</p>
-      <p class="rv">Prenes.ai plays two roles: an international managed security service provider, and a hardware vendor whose TAP, Packet Broker, Sensor Platform and upcoming AI servers carry the Prenes.ai name — with warranty, firmware and supply-chain responsibility to match.</p>
-      <p class="rv">Our first market is Vietnam. Services are delivered together with strategic partners in Vietnam that hold all required licenses, and our monitoring platform is hosted in the country so monitoring data stays local.</p>
+      <p class="rv">Prenes.ai does what a vendor does: product, platform, service standards, training and partner support. Day-to-day operations and the customer relationship in each country belong to certified partners. That keeps our team small, focused on the product, and avoids licensing a service business in every market.</p>
+      <p class="rv">We integrate proven technologies — SIEM with AI analytics, EDR, exposure management — into one multi-tenant platform, add collection hardware carrying the Prenes.ai name, and package it for financial services. Our value is in the integration, the finance focus and the service standard partners deliver.</p>
     </div>
     <div class="kfacts">
-      <div class="card kf rv"><small>Customers</small><b>Banking, securities, insurance, fintech &amp; SMB</b></div>
-      <div class="card kf rv"><small>What we offer</small><b>Managed services · Monitoring platform · Hardware &amp; AI servers</b></div>
+      <div class="card kf rv"><small>Customers</small><b>Banks, insurers, capital markets, fintech, credit institutions</b></div>
+      <div class="card kf rv"><small>What we offer</small><b>Platform · Hardware &amp; AI servers · Professional services</b></div>
       <div class="card kf rv"><small>Headquarters</small><b>Canada (planned) — Ontario / British Columbia</b></div>
-      <div class="card kf rv"><small>In Vietnam</small><b>Licensed strategic partners · data hosted locally</b></div>
+      <div class="card kf rv"><small>How we sell</small><b>MSSP, reseller and technology partners</b></div>
     </div>
   </div>
 </section>
@@ -780,15 +839,15 @@ section[id]{scroll-margin-top:130px}
     <div style="position:relative;margin-top:30px">
       <div class="zline" aria-hidden="true"></div>
       <div class="zz">
-        <div class="zt rv"><div class="n">01</div><h3>Mission</h3><p>Become the cybersecurity provider that financial institutions in Vietnam choose with confidence — helping them see their risk, detect attacks early and keep monitoring data in the country.</p></div>
+        <div class="zt rv"><div class="n">01</div><h3>Mission</h3><p>Give financial institutions one integrated platform to detect attacks and manage exposure — operated by local partners they trust, to a vendor-grade standard.</p></div>
         <div class="zv rv"><svg viewBox="0 0 420 300" aria-hidden="true"><defs><radialGradient id="gb" cx=".55" cy=".45" r=".55"><stop offset="0" stop-color="#25c4f2" stop-opacity=".6"/><stop offset="1" stop-color="#0a1a6b" stop-opacity="0"/></radialGradient></defs><circle cx="230" cy="150" r="130" fill="url(#gb)"/><g fill="#7fe3ff" id="globe"></g><circle cx="230" cy="150" r="118" fill="none" stroke="#25c4f2" stroke-opacity=".35"/></svg></div>
       </div>
       <div class="zz rev">
-        <div class="zt rv"><div class="n">02</div><h3>Vision</h3><p>Build a trusted international brand, proven in Vietnam first, and bring the same model to organizations in other markets of the region.</p></div>
+        <div class="zt rv"><div class="n">02</div><h3>Vision</h3><p>Be recognized as the security vendor for financial services: G7-origin hardware, certified MSSP partners and a platform built for regulated institutions.</p></div>
         <div class="zv rv"><svg viewBox="0 0 420 300" aria-hidden="true"><g fill="none" stroke="#25c4f2" id="fp"></g></svg></div>
       </div>
       <div class="zz">
-        <div class="zt rv"><div class="n">03</div><h3>Promise</h3><p>Every important alert is reviewed by a person and comes with a clear recommendation. We detect and advise — you stay in control of every action on your systems.</p></div>
+        <div class="zt rv"><div class="n">03</div><h3>Promise</h3><p>One platform, one service standard and one vendor-level point of support behind every partner — with no gaps between the layers of accountability.</p></div>
         <div class="zv rv"><svg viewBox="0 0 420 300" aria-hidden="true"><defs><linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#25c4f2" stop-opacity="0"/><stop offset="1" stop-color="#25c4f2" stop-opacity=".55"/></linearGradient></defs><g transform="translate(210 150)"><circle r="120" fill="none" stroke="#25c4f2" stroke-opacity=".25"/><circle r="80" fill="none" stroke="#25c4f2" stroke-opacity=".25"/><circle r="40" fill="none" stroke="#25c4f2" stroke-opacity=".25"/><path d="M-120 0H120M0-120V120" stroke="#25c4f2" stroke-opacity=".15"/><g class="sweep"><path d="M0 0 L120 0 A120 120 0 0 0 85 -85 Z" fill="url(#sw)"/></g><circle cx="52" cy="-60" r="5" fill="#ff5d7a"/><circle cx="-70" cy="40" r="4" fill="#3ee0a1"/><circle cx="30" cy="70" r="4" fill="#3ee0a1"/><circle r="5" fill="#fff"/></g></svg></div>
       </div>
     </div>
@@ -800,52 +859,52 @@ section[id]{scroll-margin-top:130px}
   <div class="wrap">
     <h2 class="h-sec rv">Four Principles<span>We Work By</span></h2>
     <div class="vals">
-      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div><h3>Licensed delivery</h3><p>We only offer what the law allows, delivered in Vietnam with partners that hold the required licenses.</p></div>
-      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><h3>Data stays local</h3><p>Our monitoring platform is hosted in a data center in Vietnam, one isolated tenant per customer.</p></div>
-      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5M4 19h16M8 15l4-5 3 3 4-6"/></svg></div><h3>Measured, not promised</h3><p>Service levels are agreed after a pilot and reported every month — not claimed in advance.</p></div>
-      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>You stay in control</h3><p>We detect, assess and recommend. Changes to your systems are always made by your team.</p></div>
+      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div><h3>Partners operate</h3><p>We do not run a SOC. Partners operate; we keep the standard, the tools and tier-3 support.</p></div>
+      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><h3>One platform</h3><p>One multi-tenant platform in Canada / U.S.; local nodes only where customers or law require them.</p></div>
+      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5M4 19h16M8 15l4-5 3 3 4-6"/></svg></div><h3>Hardware with the platform</h3><p>Collection hardware is sold with the platform, not as commodity boxes.</p></div>
+      <div class="card val rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>Open regions with partners</h3><p>We enter a market when a qualified partner is ready — not on a fixed plan.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ================= IN VIETNAM ================= -->
-<section class="sec glow-bg" id="vietnam">
+<section class="sec glow-bg" id="model">
   <div class="wrap">
-    <h2 class="h-sec rv">How We Work<span>in Vietnam</span></h2>
-    <p class="sub rv">An international brand, delivered locally through a licensed partner network.</p>
+    <h2 class="h-sec rv">How We<span>Work</span></h2>
+    <p class="sub rv">A vendor platform, operated locally by certified partners.</p>
     <div class="card arch rv" style="transform:none;margin-top:46px">
-      <svg viewBox="0 0 1000 220" role="img" aria-label="Prenes.ai provides platform, services and hardware; licensed strategic partners in Vietnam deliver services; system integrators sell and support; customers receive the service">
+      <svg viewBox="0 0 1000 220" role="img" aria-label="Prenes.ai provides platform, hardware and standards; MSSP partners operate the service; resellers sell and deploy; customers receive the service">
         <defs><marker id="am2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#25c4f2"/></marker></defs>
         <g font-family="Inter, sans-serif" text-anchor="middle">
           <rect x="10" y="50" width="210" height="120" rx="12" fill="rgba(27,79,217,.4)" stroke="#25c4f2"/>
           <text x="115" y="88" fill="#fff" font-size="17">Prenes.ai</text>
-          <text x="115" y="114" fill="#c8d2f5" font-size="12">Platform · Services</text>
+          <text x="115" y="114" fill="#c8d2f5" font-size="12">Platform · Standards</text>
           <text x="115" y="134" fill="#c8d2f5" font-size="12">Hardware · Brand</text>
           <rect x="270" y="50" width="210" height="120" rx="12" fill="rgba(12,40,150,.55)" stroke="#5b8cff"/>
-          <text x="375" y="88" fill="#fff" font-size="15">Strategic partners</text>
-          <text x="375" y="114" fill="#c8d2f5" font-size="12">Licensed in Vietnam</text>
+          <text x="375" y="88" fill="#fff" font-size="15">MSSP partners</text>
+          <text x="375" y="114" fill="#c8d2f5" font-size="12">Licensed locally</text>
           <text x="375" y="134" fill="#c8d2f5" font-size="12">Operate the service</text>
           <rect x="530" y="50" width="210" height="120" rx="12" fill="rgba(12,40,150,.55)" stroke="#5b8cff"/>
-          <text x="635" y="88" fill="#fff" font-size="15">SI partners</text>
+          <text x="635" y="88" fill="#fff" font-size="15">Resellers</text>
           <text x="635" y="114" fill="#c8d2f5" font-size="12">Sell, deploy, support</text>
           <text x="635" y="134" fill="#c8d2f5" font-size="12">Local relationship</text>
           <rect x="790" y="50" width="200" height="120" rx="12" fill="rgba(10,26,107,.5)" stroke="rgba(62,224,161,.6)"/>
           <text x="890" y="88" fill="#fff" font-size="15">Your organization</text>
           <text x="890" y="114" fill="#c8d2f5" font-size="12">Reports · Alerts</text>
-          <text x="890" y="134" fill="#c8d2f5" font-size="12">Recommendations</text>
+          <text x="890" y="134" fill="#c8d2f5" font-size="12">Response</text>
         </g>
         <g stroke="#25c4f2" stroke-width="1.5" marker-end="url(#am2)"><line x1="220" y1="110" x2="266" y2="110"/><line x1="480" y1="110" x2="526" y2="110"/><line x1="740" y1="110" x2="786" y2="110"/></g>
       </svg>
     </div>
     <div class="gl">
       <div class="card rv" style="transform:none">
-        <span class="eyebrow">Global</span><h3>International-grade technology</h3>
-        <ul><li>Established platforms for exposure management, SIEM and EDR</li><li>Global threat intelligence</li><li>Detection mapped to MITRE ATT&amp;CK</li><li>Processes aligned with ISO/IEC 27001 and NIST CSF</li></ul>
+        <span class="eyebrow">Vendor</span><h3>Prenes.ai</h3>
+        <ul><li>Integrated platform: SIEM + AI, EDR, exposure</li><li>Collection hardware and AI servers</li><li>Service standards, training and certification</li><li>Tier-3 support and threat research for finance</li></ul>
       </div>
       <div class="mid rv" aria-hidden="true"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="34" fill="#0d2a8a" stroke="#25c4f2"/><path d="M52 74V46h11a8 8 0 0 1 0 16H52" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M0 60h24M96 60h24" stroke="#25c4f2" stroke-dasharray="4 4"/></svg></div>
       <div class="card rv" style="transform:none">
-        <span class="eyebrow">Local</span><h3>Vietnam-based delivery</h3>
-        <ul><li>Vietnamese engineers and analysts</li><li>Monitoring platform hosted in Vietnam</li><li>Licensed strategic partners</li><li>Reporting in Vietnamese and English</li></ul>
+        <span class="eyebrow">Partners</span><h3>Local delivery</h3>
+        <ul><li>24/7 monitoring and response</li><li>Contract and SLA with the customer</li><li>Local licensing and regulatory knowledge</li><li>Reporting in the customer's language</li></ul>
       </div>
     </div>
   </div>
@@ -855,21 +914,21 @@ section[id]{scroll-margin-top:130px}
 <section class="sec glow-bg" id="team" style="padding-top:20px">
   <div class="wrap">
     <h2 class="h-sec rv">The People<span>Behind the Service</span></h2>
-    <p class="sub rv">Specialists across exposure management, monitoring, testing and compliance — working as one team.</p>
+    <p class="sub rv">A focused team in Canada / U.S., with engineering resources contracted from an independent technical partner.</p>
     <div class="roles">
-      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div><div><h3>Exposure Operations</h3><p>Assess, prioritize and track remediation.</p></div></div>
-      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><div><h3>SOC Analysts</h3><p>Triage, investigation and hunting, in shifts.</p></div></div>
+      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div><div><h3>Platform Engineering</h3><p>Branding layer, tenant management, integrations.</p></div></div>
+      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><div><h3>Tier-3 Support</h3><p>Expert help for partners during incidents.</p></div></div>
       <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div><div><h3>Detection Engineers</h3><p>Build and tune detection rules.</p></div></div>
-      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v5M12 16h.01"/></svg></div><div><h3>Penetration Testers</h3><p>Web, API, mobile and network testing.</p></div></div>
-      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div><div><h3>Compliance Consultants</h3><p>Map evidence to the frameworks you follow.</p></div></div>
-      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></div><div><h3>Service Managers</h3><p>Your contact for reviews, reports and renewals.</p></div></div>
+      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v5M12 16h.01"/></svg></div><div><h3>Hardware &amp; Supply Chain</h3><p>Assembly, origin records, RMA.</p></div></div>
+      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div><div><h3>Trust &amp; Compliance</h3><p>SOC 2, ISO/IEC 27001, export controls.</p></div></div>
+      <div class="card role rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></div><div><h3>Partner Managers</h3><p>Recruit, train and grow the partner network.</p></div></div>
     </div>
 
     <h2 class="h-sec rv" style="margin-top:100px">Leadership</h2>
     <div class="leaders">
       <div class="card leader rv"><div class="ph"><span>[A]</span></div><div class="bd"><h3>[Full name]</h3><p>Chief Executive Officer</p><div class="bio">[Short bio]</div></div></div>
-      <div class="card leader rv"><div class="ph"><span>[B]</span></div><div class="bd"><h3>[Full name]</h3><p>Head of Security Services</p><div class="bio">[Short bio]</div></div></div>
-      <div class="card leader rv"><div class="ph"><span>[C]</span></div><div class="bd"><h3>[Full name]</h3><p>Head of Partners &amp; Customers</p><div class="bio">[Short bio]</div></div></div>
+      <div class="card leader rv"><div class="ph"><span>[B]</span></div><div class="bd"><h3>[Full name]</h3><p>Chief Technology Officer</p><div class="bio">[Short bio]</div></div></div>
+      <div class="card leader rv"><div class="ph"><span>[C]</span></div><div class="bd"><h3>[Full name]</h3><p>VP Partners &amp; Alliances</p><div class="bio">[Short bio]</div></div></div>
     </div>
   </div>
 </section>
@@ -878,16 +937,16 @@ section[id]{scroll-margin-top:130px}
 <section class="sec black" id="standards">
   <div class="wrap">
     <h2 class="h-sec rv">Standards<span>We Hold Ourselves To</span></h2>
-    <p class="sub rv">A security provider must be secure itself. These are the certifications and controls on our roadmap.</p>
+    <p class="sub rv">Financial institutions assess us as a high-risk third party. These are the certifications and controls on our roadmap.</p>
     <div class="creds">
       <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#25c4f2" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(37,196,242,.1)" stroke="#25c4f2"/><text x="35" y="39" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#fff" font-weight="600">ISO</text></svg><h3>ISO/IEC 27001</h3><p>Information security management for our service scope</p><span class="no">In preparation</span></div>
-      <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#25c4f2" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(37,196,242,.1)" stroke="#25c4f2"/><path d="M26 35l6 6 12-12" fill="none" stroke="#fff" stroke-width="2.4"/></svg><h3>Vendor certifications</h3><p>Our engineers certified on the platforms we operate</p><span class="no">Ongoing</span></div>
-      <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#5b8cff" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(91,140,255,.1)" stroke="#5b8cff"/><path d="M26 35h18M35 26v18" stroke="#fff" stroke-width="2.4"/></svg><h3>Service quality system</h3><p>Standardized operations as we grow</p><span class="no">Planned</span></div>
-      <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#5b8cff" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(91,140,255,.1)" stroke="#5b8cff"/><circle cx="35" cy="35" r="7" fill="none" stroke="#fff" stroke-width="2.4"/></svg><h3>Independent assurance</h3><p>Third-party review of our service controls</p><span class="no">Planned</span></div>
+      <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#25c4f2" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(37,196,242,.1)" stroke="#25c4f2"/><path d="M26 35l6 6 12-12" fill="none" stroke="#fff" stroke-width="2.4"/></svg><h3>SOC 2 Type II</h3><p>Type I in year one, Type II after the observation period</p><span class="no">Planned</span></div>
+      <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#5b8cff" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(91,140,255,.1)" stroke="#5b8cff"/><path d="M26 35h18M35 26v18" stroke="#fff" stroke-width="2.4"/></svg><h3>G7-origin hardware</h3><p>Canada / U.S. assembly with traceable records</p><span class="no">In preparation</span></div>
+      <div class="card cred rv"><svg class="seal" viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="30" fill="none" stroke="#5b8cff" stroke-dasharray="3 3"/><circle cx="35" cy="35" r="22" fill="rgba(91,140,255,.1)" stroke="#5b8cff"/><circle cx="35" cy="35" r="7" fill="none" stroke="#fff" stroke-width="2.4"/></svg><h3>Independent pentest</h3><p>Annual third-party test of our platform</p><span class="no">Planned</span></div>
     </div>
     <div class="bens" style="margin-top:50px">
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></div><h3>Least-privilege access</h3><p>Analysts only access the customers they are assigned to, with MFA and full logging.</p></div>
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Encryption &amp; vaulting</h3><p>Data encrypted in transit and at rest; scan credentials kept in a secure vault.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></div><h3>Role-based access</h3><p>Partners see their customers; vendor access is approved and logged.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Export &amp; sanctions control</h3><p>Every order screened against Canadian and U.S. rules.</p></div>
       <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg></div><h3>Tested recovery</h3><p>Continuity plan for our platform, exercised every year.</p></div>
     </div>
   </div>
@@ -898,9 +957,9 @@ section[id]{scroll-margin-top:130px}
   <div class="wrap">
     <h2 class="h-sec rv">Where<span>We're Heading</span></h2>
     <div class="road">
-      <div class="rv"><span class="wk">From 2027</span><h3>Launch in Vietnam</h3><p>Exposure Management and Monitoring &amp; Detection for financial institutions and SMBs, with our first partners.</p></div>
-      <div class="rv"><span class="wk">Next</span><h3>Grow the network</h3><p>More SI partners, broader packages and the Prenes.ai hardware line.</p></div>
-      <div class="rv"><span class="wk">Later</span><h3>Beyond Vietnam</h3><p>Bringing the Prenes.ai model to organizations in other markets of the region.</p></div>
+      <div class="rv"><span class="wk">Year 1</span><h3>Platform v1 &amp; first partners</h3><p>SIEM + AI, TAP, Packet Broker and Sensor Platform; first certified partners in Asia-Pacific; SOC 2 Type I.</p></div>
+      <div class="rv"><span class="wk">Year 2</span><h3>One console, more regions</h3><p>EDR and exposure in a common dashboard, partner portal, framework reports; first partners in the Middle East &amp; Africa.</p></div>
+      <div class="rv"><span class="wk">Year 3</span><h3>AI and finance analytics</h3><p>Production AI servers, fraud analytics for banks, partners in Europe &amp; North America.</p></div>
     </div>
   </div>
 </section>
@@ -912,49 +971,110 @@ section[id]{scroll-margin-top:130px}
       <div>
         <span class="eyebrow">Careers</span>
         <h3 style="margin-top:8px">Defend the Organizations<br>People Depend On</h3>
-        <p>Investigate real attacks, learn from global intelligence and help protect financial institutions and businesses across Vietnam.</p>
+        <p>Build the platform, hardware and partner network that protect financial institutions across regions.</p>
         <a href="#" class="btn btn-light">View openings ↗</a>
       </div>
       <div class="jobs">
-        <a href="#"><span>SOC Analyst — shift-based</span><em>Hanoi</em></a>
-        <a href="#"><span>Exposure Operations Engineer</span><em>Hanoi</em></a>
-        <a href="#"><span>Detection Engineer</span><em>HCMC</em></a>
-        <a href="#"><span>Partner &amp; Channel Manager</span><em>HCMC</em></a>
+        <a href="#"><span>Platform Engineer</span><em>Canada</em></a>
+        <a href="#"><span>Partner Manager — Asia-Pacific</span><em>Remote</em></a>
+        <a href="#"><span>Hardware &amp; Supply Chain Lead</span><em>Canada</em></a>
+        <a href="#"><span>Trust &amp; Compliance Manager</span><em>Canada</em></a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec black" id="contact">
+  <div class="wrap">
+    <h2 class="h-sec rv">Contact<span>Us</span></h2>
+    <p class="sub rv">Prenes.ai — cybersecurity platform for financial services.</p>
+    <div class="offices">
+      <div class="office-b rv"><h3>Headquarters</h3><p>Canada (planned) — Ontario / British Columbia. Address to be announced.</p><p>Email: contact@prenes.ai</p></div>
+      <div class="office-b rv"><h3>Asia-Pacific</h3><p>First region for the partner network.</p><p>Through certified partners</p></div>
+      <div class="office-b rv"><h3>Middle East, Africa, Europe &amp; North America</h3><p>Opening as qualified partners join.</p><p>Through certified partners</p></div>
+    </div>
+  </div>
+</section>
+<!-- ================= TALK ================= -->
+<section class="talk" id="talk">
+  <div class="wrap talk-in">
+    <div class="topics">
+      <h2 class="rv">How can<br><span class="hl">we help?</span></h2>
+      <div class="tp-list">
+        <button class="card tp on rv" data-topic="Customers" style="transform:none"><b>Financial institutions</b><span>Find a certified partner, tiers and sizing</span></button>
+        <button class="card tp rv" data-topic="Become a partner" style="transform:none"><b>Become a partner</b><span>MSSP / MDR, resellers and technology partners</span></button>
+        <button class="card tp rv" data-topic="Hardware" style="transform:none"><b>Hardware &amp; AI servers</b><span>Datasheets, origin documents, tenders</span></button>
+        <button class="card tp rv" data-topic="Media &amp; other" style="transform:none"><b>Media &amp; other</b><span>Press, events and general questions</span></button>
+      </div>
+      <div class="existing rv">
+        <b>Already a customer?</b>
+        <p>Contact your MSSP partner through your portal or escalation contacts. Partners reach Prenes.ai tier-3 support through the partner portal.</p>
+      </div>
+    </div>
+
+    <form class="lt rv" id="qf" novalidate>
+      <h2>Let's Talk</h2>
+      <p class="lt-sub">One platform. Run by partners you trust.</p>
+      <div class="lt-grid">
+        <div class="full"><label for="c-topic">Topic</label>
+          <select id="c-topic"><option>Customers</option><option>Become a partner</option><option>Hardware</option><option>Media &amp; other</option></select></div>
+        <div><label for="c-name">Name <i>*</i></label><input id="c-name" required autocomplete="name"></div>
+        <div><label for="c-org">Organization <i>*</i></label><input id="c-org" required autocomplete="organization"></div>
+        <div><label for="c-email">Email <i>*</i></label><input id="c-email" type="email" required autocomplete="email"></div>
+        <div><label for="c-phone">Phone</label><input id="c-phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="c-city">Country <i>*</i></label><input id="c-city" required autocomplete="country-name"></div>
+        <div class="full"><label for="c-msg">How can we help?</label><textarea id="c-msg" rows="3"></textarea></div>
+        <label class="chk full"><input type="checkbox" required> I agree that Prenes.ai and its partners may contact me and process my data under the Privacy Policy.</label>
+        <div class="actions full"><button class="btn btn-light" type="submit">Submit</button><span class="ok">Thank you — we will reply within one business day.</span></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= WAYS ================= -->
+<section class="sec glow-bg">
+  <div class="wrap">
+    <h2 class="h-sec rv">Other Ways<span>to Reach Us</span></h2>
+    <div class="ways">
+      <div class="card way rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><h3>Sales</h3><p>contact@prenes.ai</p></div>
+      <div class="card way rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c.8-3 3-5 5-5s3 1 4 2c1-1 2-2 4-2s4.2 2 5 5"/></svg></div><h3>Partners</h3><p>partners@prenes.ai</p><a href="prenes-partners.html#apply" class="more">Partner application <span>↗</span></a></div>
+      <div class="card way rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>Trust &amp; security</h3><p>Security documentation pack for due diligence, under NDA.</p><a href="prenes-solution-platform.html#trust" class="more">Learn more <span>↗</span></a></div>
+    </div>
+    <p class="cmp-note">Email addresses shown are placeholders until the domain is confirmed.</p>
   </div>
 </section>
 
 <section class="cta black" style="border-top:1px solid #0d1230">
   <div class="wrap">
     <h2 class="rv">Let's Protect What Your<br>Customers Trust You With.</h2>
-    <p class="rv">Talk to us, or ask to be connected with a Prenes.ai partner near you.</p>
-    <div class="ctas rv"><a href="prenes-packages.html#quote" class="btn btn-dark">Contact us</a><a href="prenes-home.html#solutions" class="btn btn-light">Explore solutions</a></div>
+    <p class="rv">Talk to us, or find a certified Prenes.ai partner in your region.</p>
+    <div class="ctas rv"><a href="prenes-about.html#contact" class="btn btn-dark">Contact us</a><a href="prenes-partners.html" class="btn btn-light">Partner program</a></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="f-top">
-      <div class="f-col"><h4>Solutions</h4><ul><li><a href="prenes-service-a.html">Exposure Management</a></li><li><a href="prenes-service-b.html">Monitoring &amp; Detection</a></li><li><a href="prenes-hardware.html">Hardware</a></li><li><a href="prenes-packages.html">Packages</a></li></ul></div>
-      <div class="f-col"><h4>Company</h4><ul><li><a href="prenes-about.html">About Prenes.ai</a></li><li><a href="prenes-partners.html">Partners</a></li><li><a href="prenes-about.html#careers">Careers</a></li><li><a href="prenes-contact.html">Contact</a></li></ul></div>
-      <div class="f-col"><h4>Industries &amp; Resources</h4>
+      <div class="f-col"><h4>Products &amp; Services</h4><ul><li><a href="prenes-products.html">Security Platform</a></li><li><a href="prenes-hardware.html">Hardware</a></li><li><a href="prenes-service-b.html">Managed Detection &amp; Response</a></li><li><a href="prenes-service-a.html">Exposure &amp; Compliance</a></li><li><a href="prenes-services.html#professional">Professional Services</a></li></ul></div>
+      <div class="f-col"><h4>Company</h4><ul><li><a href="prenes-about.html">About us</a></li><li><a href="prenes-partners.html">Partner Program</a></li><li><a href="prenes-solution-platform.html#trust">Trust &amp; Security</a></li><li><a href="prenes-about.html#careers">Careers</a></li><li><a href="prenes-about.html#contact">Contact</a></li></ul></div>
+      <div class="f-col"><h4>Solutions &amp; Resources</h4>
         <ul style="display:grid;grid-template-columns:1fr 1fr;gap:9px 30px">
-          <li><a href="prenes-industry-banking.html">Banking</a></li><li><a href="prenes-resources.html">Threat Advisory</a></li>
-          <li><a href="prenes-industry-securities.html">Securities</a></li><li><a href="prenes-resources.html?cat=Compliance">Compliance Guides</a></li>
-          <li><a href="prenes-industry-insurance.html">Insurance</a></li><li><a href="prenes-platform.html">Platform &amp; Data</a></li>
-          <li><a href="prenes-industry-fintech.html">Fintech</a></li><li><a href="#">FAQ</a></li>
-          <li><a href="prenes-industry-smb.html">SMB</a></li>
+          <li><a href="prenes-solution-banking.html">Banking</a></li><li><a href="prenes-resources.html">Threat Research</a></li>
+          <li><a href="prenes-solution-insurance.html">Insurance</a></li><li><a href="prenes-resources.html?cat=Compliance">Compliance Guides</a></li>
+          <li><a href="prenes-solution-securities.html">Capital Markets</a></li><li><a href="prenes-solution-platform.html">Platform</a></li>
+          <li><a href="prenes-solution-fintech.html">Fintech</a></li><li><a href="prenes-hardware.html#datasheets">Datasheets</a></li>
+          <li><a href="prenes-solution-lenders.html">Credit Institutions</a></li>
         </ul></div>
     </div>
     <div class="f-mid">
       <div>
-        <p class="f-tag">Prenes.ai — See your risk early.<br>Detect attacks in time.</p>
-        <form class="news" onsubmit="return false"><input type="email" placeholder="Enter your email to receive threat advisories" aria-label="Email"><button aria-label="Subscribe">→</button></form>
+        <p class="f-tag">Prenes.ai — Security platform for financial services.<br>Delivered by certified partners.</p>
+        <form class="news" onsubmit="return false"><input type="email" placeholder="Get threat research for financial services" aria-label="Email"><button aria-label="Subscribe">→</button></form>
       </div>
-      <div class="f-col office"><h4>Prenes.ai</h4><p>Headquarters: Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
-      <div class="f-col office"><h4>Vietnam</h4><p>Delivered with licensed strategic partners in Hanoi and Ho Chi Minh City.</p></div>
-      <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div>
+      <div class="f-col office"><h4>Headquarters</h4><p>Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
+      <div class="f-col office"><h4>Regions</h4><p>Asia-Pacific · Middle East &amp; Africa · Europe &amp; North America — through certified partners.</p></div>
+      <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">X</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
     <div class="f-logo">
       <svg class="waves l" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="wv"></g></svg>
@@ -1001,6 +1121,14 @@ section[id]{scroll-margin-top:130px}
     const p=(a)=>[210+r*Math.cos(a*Math.PI/180),150+r*1.15*Math.sin(a*Math.PI/180)];const[x0,y0]=p(a0),[x1,y1]=p(a1);
     s+=`<path d="M${x0.toFixed(1)} ${y0.toFixed(1)} A${r} ${(r*1.15).toFixed(1)} 0 1 1 ${x1.toFixed(1)} ${y1.toFixed(1)}" stroke-opacity="${(0.85-i*0.04).toFixed(2)}" stroke-width="2" stroke-dasharray="${i%3?'60 6':'none'}" stroke-linecap="round"/>`}
     fp.innerHTML=s;}
+
+  // topic chips -> select
+  const sel=document.getElementById('c-topic');
+  document.querySelectorAll('.tp').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('.tp').forEach(x=>x.classList.toggle('on',x===t));sel.value=t.dataset.topic.replace(/&amp;/g,'&');}));
+  sel.addEventListener('change',()=>document.querySelectorAll('.tp').forEach(x=>x.classList.toggle('on',x.dataset.topic.replace(/&amp;/g,'&')===sel.value)));
+  // form (front-end only)
+  const qf=document.getElementById('qf');
+  qf.addEventListener('submit',ev=>{ev.preventDefault();if(!qf.checkValidity()){qf.reportValidity();return}qf.classList.add('sent');qf.querySelector('button[type=submit]').textContent='Sent ✓'});
 
   // decorative line bundles (hero + footer)
   const lines=(g,n,h)=>{if(!g)return;let s='';for(let i=0;i<n;i++){const x=40+i*12;s+=`<path stroke-opacity="${(.12+i*.05).toFixed(2)}" d="M${x} 0 C ${x+70} ${h*.3}, ${x-50} ${h*.7}, ${x+20} ${h}"/>`}g.innerHTML=s};

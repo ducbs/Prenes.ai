@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Partner Program — Prenes.ai</title>
-<meta name="description" content="Become a Prenes.ai partner: sell exposure management, 24/7 monitoring and visibility hardware in Vietnam, with or without a cybersecurity service license.">
+<meta name="description" content="Join the Prenes.ai partner network: MSSP/MDR, reseller and technology partners for financial services, with tiers, certification and tier-3 vendor support.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -705,6 +705,12 @@ form.qf{background:#000;border:1px solid #1a2148;border-radius:14px;padding:40px
 .segs input{width:auto;accent-color:var(--cyan)}
 @media (max-width:820px){.paths{grid-template-columns:1fr}}
 
+
+.paths3{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.region{padding:30px;transform:none}.region .eyebrow{color:var(--cyan)}.region h3{font-size:22px;margin:10px 0 8px}.region p{color:var(--muted);font-size:14px;margin-bottom:16px}
+@media(max-width:900px){.paths3,.regions{grid-template-columns:minmax(0,1fr)!important}}
+
 </style>
 </head>
 <body>
@@ -717,28 +723,27 @@ form.qf{background:#000;border:1px solid #1a2148;border-radius:14px;padding:40px
     <nav class="menu" id="menu">
       <a href="prenes-home.html">Home</a>
       <div class="dd">
-        <a href="prenes-home.html#solutions">Solutions<span class="caret">▾</span></a>
-        <div class="dd-menu">
-          <a href="prenes-service-a.html">Exposure Management &amp; Compliance<small>Assets, vulnerabilities, configuration, compliance</small></a>
-          <a href="prenes-service-b.html">Monitoring &amp; Detection<small>24/7 SOC, SIEM + EDR, alerts with recommendations</small></a>
-          <a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a>
-        </div>
+        <a href="prenes-products.html">Products<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-products.html#software">Security Platform Software<small>SIEM with AI analytics, multi-tenant, partner toolkit</small></a><a href="prenes-hardware.html">Hardware<small>TAP, Packet Broker, Sensor Platform, AI servers</small></a><a href="prenes-hardware.html#datasheets">Datasheets<small>TAP · Packet Broker · Sensor Platform</small></a></div>
       </div>
-      <a href="prenes-industries.html">Industries</a>
-      <a href="prenes-packages.html">Packages</a>
-      <a href="prenes-platform.html">Platform</a>
+      <div class="dd">
+        <a href="prenes-services.html">Services<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-service-b.html">Managed Detection &amp; Response<small>24/7 monitoring and response by certified partners</small></a><a href="prenes-service-a.html">Exposure &amp; Compliance<small>Assets, vulnerabilities, configuration, reports</small></a><a href="prenes-packages.html">Subscription Tiers<small>Essentials · Professional · Enterprise</small></a><a href="prenes-services.html#professional">Professional Services<small>Assessment, pentest, SOC advisory, training</small></a></div>
+      </div>
+      <div class="dd">
+        <a href="prenes-solutions.html">Solutions<span class="caret">▾</span></a>
+        <div class="dd-menu"><a href="prenes-solution-banking.html">Banking<small>Core banking, SWIFT, cards, digital channels</small></a><a href="prenes-solution-insurance.html">Insurance<small>Policyholder data, agents, legacy systems</small></a><a href="prenes-solution-securities.html">Capital Markets<small>Trading, back office, investor portals</small></a><a href="prenes-solution-fintech.html">Fintech &amp; E-wallets<small>Cloud-native, API-first</small></a><a href="prenes-solution-lenders.html">Credit Institutions<small>Lenders and credit unions</small></a><a href="prenes-solution-platform.html">Platform &amp; Architecture<small>How data flows, hosting, trust</small></a></div>
+      </div>
+      <a href="prenes-partners.html" class="on">Partners</a>
       <a href="prenes-resources.html">Resources</a>
-      <a href="prenes-about.html">About</a>
-      <a href="prenes-contact.html">Contact</a>
+      <a href="prenes-about.html">About us</a>
     </nav>
     <div class="nav-r">
-      <span class="lang"><b>EN</b> / VI</span>
-      <a href="prenes-home.html#assessment" class="btn btn-light">Get Assessment</a>
+      <a href="prenes-partners.html#locator" class="btn btn-light">Find a Partner</a>
       <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i><i></i></button>
     </div>
   </div>
 </header>
-
 <!-- ================= PAGE HERO ================= -->
 <section class="p-hero">
   <svg class="lines" viewBox="0 0 240 420" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="hl"></g></svg>
@@ -746,23 +751,23 @@ form.qf{background:#000;border:1px solid #1a2148;border-radius:14px;padding:40px
     <nav class="crumb rv" aria-label="Breadcrumb"><a href="prenes-home.html">Home</a><i></i><span>Partners</span></nav>
     <div class="p-hero-in">
       <div>
-        <h1 class="rv"><small>Partner Program</small>Grow Recurring Security Revenue With Prenes.ai</h1>
-        <p class="lead rv">Offer exposure management, 24/7 monitoring and visibility hardware to your customers — without building a SOC. You keep the customer relationship; we bring the platform, the team and the brand.</p>
+        <h1 class="rv"><small>Partner Program</small>Run Your Security Services on Prenes.ai</h1>
+        <p class="lead rv">A ready-made platform for financial services: SIEM with AI, EDR, exposure management and collection hardware, multi-tenant and built for MSSPs. You operate the service and own the customer; Prenes.ai brings the platform, training and tier-3 support.</p>
         <ul class="ticks rv">
-          <li>Subscription services that renew every year</li>
-          <li>A simple entry offer to open conversations</li>
-          <li>Presales, training and technical support from Prenes.ai</li>
+          <li>Recurring subscription revenue, protected by deal registration</li>
+          <li>No platform to build — one console for all your customers</li>
+          <li>Certification, co-marketing and a partner manager</li>
         </ul>
         <div class="ctas rv">
           <a href="#apply" class="btn btn-light">Become a partner ↗</a>
-          <a href="#paths" class="btn btn-dark">See partner paths</a>
+          <a href="#locator" class="btn btn-dark">Find a partner</a>
         </div>
       </div>
       <div class="card drivers rv" style="transform:none">
         <h3>Who we partner with</h3>
-        <div class="drv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><div><b>Licensed system integrators</b><span>SIs holding a cybersecurity service license in Vietnam</span></div></div>
-        <div class="drv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><div><b>System integrators &amp; resellers</b><span>Serving banks, insurers, securities firms and enterprises</span></div></div>
-        <div class="drv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg></div><div><b>IT service providers</b><span>Supporting small and mid-size businesses</span></div></div>
+        <div class="drv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><div><b>MSSP / MDR providers</b><span>24/7 SOCs serving financial institutions</span></div></div>
+        <div class="drv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><div><b>Resellers &amp; integrators</b><span>Selling and deploying subscriptions and hardware</span></div></div>
+        <div class="drv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg></div><div><b>Technology partners</b><span>Firewall, identity and cloud integrations</span></div></div>
       </div>
     </div>
   </div>
@@ -770,159 +775,176 @@ form.qf{background:#000;border:1px solid #1a2148;border-radius:14px;padding:40px
 </section>
 
 <nav class="subnav" aria-label="Section navigation"><div class="wrap">
-  <a href="#why" class="on">Why partner</a><a href="#paths">Partner paths</a><a href="#sell">What you sell</a><a href="#deal">How a deal works</a><a href="#roles">Who does what</a><a href="#support">Support</a><a href="#faq">FAQ</a><a href="#apply">Apply</a>
+  <a href="#why" class="on">Why partner</a><a href="#types">Partner types</a><a href="#tiers">Tiers</a><a href="#requirements">Requirements</a><a href="#onboarding">Onboarding</a><a href="#roles">Who does what</a><a href="#training">Training</a><a href="#locator">Find a partner</a><a href="#apply">Apply</a>
 </div></nav>
-
 <!-- ================= WHY ================= -->
 <section class="sec glow-bg" id="why">
   <div class="wrap">
     <h2 class="h-sec rv">Why Partner<span>With Prenes.ai</span></h2>
     <div class="chal chal4">
-      <div class="card rv"><div class="n">01</div><h3>Recurring revenue</h3><p>Annual subscriptions that renew and grow, instead of one-off projects.</p></div>
-      <div class="card rv"><div class="n">02</div><h3>No SOC to build</h3><p>The platform and the monitoring team are already in place.</p></div>
-      <div class="card rv"><div class="n">03</div><h3>Easy first step</h3><p>A fixed-scope 4-week exposure assessment opens doors with existing customers.</p></div>
-      <div class="card rv"><div class="n">04</div><h3>Services + hardware</h3><p>One brand for monitoring services and visibility appliances.</p></div>
+      <div class="card rv"><div class="n">01</div><h3>Recurring revenue</h3><p>Annual subscriptions that renew and grow, plus hardware and professional services.</p></div>
+      <div class="card rv"><div class="n">02</div><h3>Built for MSSPs</h3><p>Multi-tenant platform with dashboards, playbooks and reports per customer.</p></div>
+      <div class="card rv"><div class="n">03</div><h3>Finance focus</h3><p>Detections and compliance templates for banks, insurers and capital markets.</p></div>
+      <div class="card rv"><div class="n">04</div><h3>Vendor backing</h3><p>Tier-3 support, certified training and joint exercises from Prenes.ai.</p></div>
     </div>
     <div class="callout-band rv">
-      <b>New rules create demand.</b> Under the Cybersecurity Law 2025 and Decree 332/2026/NĐ-CP, organizations need cybersecurity services from licensed providers. Prenes.ai partners can offer them a compliant answer.
+      <b>You run the service, we run the platform.</b> Partners sign with customers and own their service levels; Prenes.ai is accountable for the platform, hardware and tier-3 support behind them.
     </div>
   </div>
 </section>
 
-<!-- ================= PATHS ================= -->
-<section class="sec glow-bg" id="paths" style="padding-top:20px">
+
+<!-- ================= TYPES ================= -->
+<section class="sec glow-bg" id="types" style="padding-top:20px">
   <div class="wrap">
-    <h2 class="h-sec rv">Two Ways<span>to Partner</span></h2>
-    <p class="sub rv">Whether or not you hold a cybersecurity service license, there is a path for you.</p>
-    <div class="paths">
+    <h2 class="h-sec rv">Three Types<span>of Partner</span></h2>
+    <p class="sub rv">Each type has its own role, benefits and requirements.</p>
+    <div class="paths paths3">
       <div class="card path feat rv">
-        <span class="eyebrow">Path 1</span>
-        <h3>Licensed Service Partner</h3>
-        <p class="pd">For system integrators that hold a cybersecurity service license in Vietnam.</p>
-        <ul>
-          <li>Buy services and platform subscriptions directly from Prenes.ai</li>
-          <li>Contract directly with your customers</li>
-          <li>Sell hardware with local warranty</li>
-          <li>Highest partner pricing tier</li>
-        </ul>
+        <span class="eyebrow">MSSP / MDR</span>
+        <h3>Service Partner</h3>
+        <p class="pd">Operates 24/7 monitoring on the platform, packages the service, signs with customers and owns their SLA.</p>
+        <ul><li>Platform, training and tier-3 support</li><li>Service standard and playbooks</li><li>Dashboards and reports per tenant</li><li>Right to package under your own service brand (Strategic)</li></ul>
         <div class="flowmini"><span>Prenes.ai</span><i>→</i><span class="me">You</span><i>→</i><span>Customer</span></div>
       </div>
       <div class="card path rv">
-        <span class="eyebrow">Path 2</span>
-        <h3>Reseller Partner</h3>
-        <p class="pd">For integrators and IT providers without a cybersecurity service license.</p>
-        <ul>
-          <li>Sell through our authorized distributor in Vietnam</li>
-          <li>The distributor holds the service contract; you keep the relationship</li>
-          <li>Hardware can be bought directly from Prenes.ai</li>
-          <li>Move to Path 1 once you are licensed</li>
-        </ul>
-        <div class="flowmini"><span>Prenes.ai</span><i>→</i><span>Distributor</span><i>→</i><span class="me">You</span><i>→</i><span>Customer</span></div>
+        <span class="eyebrow">Reseller / Integrator</span>
+        <h3>Solution Partner</h3>
+        <p class="pd">Sells subscriptions and hardware and deploys them, working with an MSSP partner for operations.</p>
+        <ul><li>Partner discounts by tier</li><li>Deal registration and price protection</li><li>Technical support for deployments</li><li>Demo kit and trial environment</li></ul>
+        <div class="flowmini"><span>Prenes.ai</span><i>→</i><span class="me">You</span><i>→</i><span>Customer</span></div>
+      </div>
+      <div class="card path rv">
+        <span class="eyebrow">Technology</span>
+        <h3>Technology Partner</h3>
+        <p class="pd">Integrates firewall, identity, cloud or banking systems with the Prenes.ai platform.</p>
+        <ul><li>Open APIs and documentation</li><li>Joint integration testing</li><li>Listing in partner materials</li><li>Cross-selling opportunities</li></ul>
+        <div class="flowmini"><span class="me">You</span><i>⇄</i><span>Prenes.ai</span></div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ================= WHAT YOU SELL ================= -->
-<section class="sec glow-bg" id="sell" style="padding-top:20px">
+<!-- ================= TIERS ================= -->
+<section class="sec glow-bg" id="tiers" style="padding-top:20px">
   <div class="wrap">
-    <h2 class="h-sec rv">What You<span>Can Sell</span></h2>
-    <div class="pk2">
-      <div class="card rv" style="transform:none">
-        <span class="eyebrow">Services</span><h3>Exposure Management &amp; Monitoring</h3>
-        <div class="tiers">
-          <div class="tier"><b>A</b><span>A1 · A2 · A3<small>Assets, vulnerabilities, configuration, compliance</small></span><em>Line A</em></div>
-          <div class="tier"><b>B</b><span>B1 · B2 · B3<small>Logs, endpoints, 24/7 SOC, hunting</small></span><em>Line B</em></div>
-          <div class="tier"><b>+</b><span>Combos &amp; add-ons<small>Pentest, web/API, cloud, compliance reports, vendor MDR</small></span><em>Extras</em></div>
-        </div>
-        <a href="prenes-packages.html" class="more" style="margin-top:18px;display:inline-flex">See all packages <span>↗</span></a>
-      </div>
-      <div class="card rv" style="transform:none">
-        <span class="eyebrow">Hardware</span><h3>Prenes.ai Appliances</h3>
-        <div class="tiers">
-          <div class="tier"><b>T</b><span>Network TAP<small>Copy traffic without affecting production</small></span><em>Visibility</em></div>
-          <div class="tier"><b>N</b><span>Network Packet Broker<small>Aggregate, filter and distribute traffic</small></span><em>Visibility</em></div>
-          <div class="tier"><b>S</b><span>Sensor Platform<small>On-site collection for monitoring</small></span><em>Collection</em></div>
-        </div>
-        <a href="prenes-hardware.html" class="more" style="margin-top:18px;display:inline-flex">See hardware <span>↗</span></a>
-      </div>
+    <h2 class="h-sec rv">Partner<span>Tiers</span></h2>
+    <div class="cmp-wrap rv">
+      <table class="cmp sla">
+        <thead><tr><th style="width:22%">Tier</th><th>Requirements</th><th>Benefits</th></tr></thead>
+        <tbody>
+          <tr><td>Registered</td><td class="m">Signed agreement and completed basic sales course</td><td class="m">Partner portal, documentation, subscriptions at partner price</td></tr>
+          <tr><td>Certified</td><td class="m">Prenes.ai-certified engineers and three live customers</td><td class="m">Higher discount, deal registration, priority support</td></tr>
+          <tr><td>Strategic</td><td class="m">24/7 SOC on the platform, ten or more customers, roadmap input</td><td class="m">Highest discount, co-marketing funds, own-brand service packaging</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note">Discount levels are shared under the partner agreement. Territories are non-exclusive by default.</p>
+  </div>
+</section>
+<!-- ================= REQUIREMENTS ================= -->
+<section class="sec black" id="requirements">
+  <div class="wrap">
+    <h2 class="h-sec rv">Becoming an<span>MSSP Partner</span></h2>
+    <p class="sub rv">Financial institutions trust partners to protect critical systems, so the bar is set accordingly.</p>
+    <div class="bens">
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>24/7 monitoring</h3><p>A round-the-clock SOC, or a concrete plan to build one, with incident-handling procedures.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>Local licensing</h3><p>Any cybersecurity service license your country requires — held and maintained by you.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg></div><h3>Finance references</h3><p>Experience in financial services or a sector with comparable requirements.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></div><h3>Certified engineers</h3><p>At least two Prenes.ai-certified engineers, growing with your customer base.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5l8 4 8-4v14l-8 4z"/></svg></div><h3>Financial strength</h3><p>Able to carry service levels and compensation to your customers.</p></div>
+      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></div><h3>Quality reviews</h3><p>Periodic operational reviews by Prenes.ai and joint incident exercises.</p></div>
     </div>
   </div>
 </section>
-
-<!-- ================= DEAL FLOW ================= -->
-<section class="sec glow-bg" id="deal" style="padding-top:20px">
+<!-- ================= ONBOARDING ================= -->
+<section class="sec glow-bg" id="onboarding">
   <div class="wrap">
-    <h2 class="h-sec rv">How a Deal<span>Works</span></h2>
+    <h2 class="h-sec rv">Joining<span>the Network</span></h2>
     <div class="onb onb5">
-      <div class="rv"><span class="wk">Step 1</span><h3>Register</h3><p>Share the opportunity with Prenes.ai.</p></div>
-      <div class="rv"><span class="wk">Step 2</span><h3>Scope together</h3><p>Joint scoping call and demo with our presales team.</p></div>
-      <div class="rv"><span class="wk">Step 3</span><h3>Contract</h3><p>You — or the distributor on Path 2 — sign with the customer.</p></div>
-      <div class="rv"><span class="wk">Step 4</span><h3>Onboard</h3><p>Sensors deployed, baseline, first report.</p></div>
-      <div class="rv"><span class="wk">Step 5</span><h3>Grow</h3><p>Quarterly reviews, renewals and add-ons.</p></div>
+      <div class="rv"><span class="wk">2 weeks</span><h3>Screening</h3><p>Capabilities, licensing and references.</p></div>
+      <div class="rv"><span class="wk">4 weeks</span><h3>Agreement</h3><p>Partner terms, confidentiality, SLA and brand use.</p></div>
+      <div class="rv"><span class="wk">4–6 weeks</span><h3>Training</h3><p>Technical and process certification for your engineers.</p></div>
+      <div class="rv"><span class="wk">6–8 weeks</span><h3>Pilot</h3><p>A first customer deployed with Prenes.ai support.</p></div>
+      <div class="rv"><span class="wk">Ongoing</span><h3>Live</h3><p>Move up tiers based on results.</p></div>
     </div>
   </div>
 </section>
-
 <!-- ================= ROLES (black) ================= -->
 <section class="sec black" id="roles">
   <div class="wrap">
     <h2 class="h-sec rv">Who Does<span>What</span></h2>
-    <p class="sub rv">Clear roles keep customers well served. Details are set out in each partner agreement.</p>
+    <p class="sub rv">Roles during operations and incidents. Details are set out in each partner agreement.</p>
     <div class="cmp-wrap rv">
       <table class="cmp sla">
-        <thead><tr><th style="width:30%">Activity</th><th>Partner</th><th>Prenes.ai</th><th>Licensed delivery team in Vietnam</th></tr></thead>
+        <thead><tr><th style="width:24%">Activity</th><th>MSSP partner</th><th>Prenes.ai</th><th>Technology supplier</th><th>Customer</th></tr></thead>
         <tbody>
-          <tr><td>Customer relationship</td><td class="y">●</td><td class="m">Supports</td><td class="m">—</td></tr>
-          <tr><td>Proposal &amp; customer contract</td><td>Path 1: you · Path 2: distributor</td><td class="m">Pricing &amp; presales</td><td class="m">—</td></tr>
-          <tr><td>Onboarding &amp; deployment</td><td class="y">●</td><td class="m">Platform setup</td><td class="y">●</td></tr>
-          <tr><td>Monitoring, assessment &amp; reports</td><td class="m">—</td><td class="m">Platform</td><td class="y">●</td></tr>
-          <tr><td>Service levels &amp; compensation to the customer</td><td>Whoever signs the customer contract (Path 1: you · Path 2: distributor)</td><td class="m">Back-to-back terms</td><td class="m">Delivers to the agreed SLA</td></tr>
-          <tr><td>Hardware purchase &amp; import</td><td>Buy direct from Prenes.ai; licensed importer pays duties &amp; VAT</td><td class="m">Supplies the unit</td><td class="m">—</td></tr>
-          <tr><td>Hardware warranty in Vietnam</td><td>Buyer of the unit</td><td class="m">Technical support &amp; RMA</td><td class="m">—</td></tr>
-          <tr><td>Renewals &amp; add-ons</td><td class="y">●</td><td class="y">●</td><td class="m">Reviews</td></tr>
+          <tr><td>Monitoring &amp; triage</td><td class="m">Performs</td><td class="m">Provides tools</td><td class="m">—</td><td class="m">Informed</td></tr>
+          <tr><td>Investigation &amp; response</td><td class="m">Performs</td><td class="m">Tier-3 support</td><td class="m">Supports product issues</td><td class="m">Approves critical actions</td></tr>
+          <tr><td>Platform or software fault</td><td class="m">Reports</td><td class="m">Owns the fix</td><td class="m">Fixes product</td><td class="m">Informed</td></tr>
+          <tr><td>Faulty hardware</td><td class="m">Detects, reports</td><td class="m">Replaces (RMA)</td><td class="m">OEM repairs</td><td class="m">Grants access</td></tr>
+          <tr><td>Compliance reports</td><td class="m">Prepares, presents</td><td class="m">Provides templates</td><td class="m">—</td><td class="m">Submits to regulator</td></tr>
+          <tr><td>Version updates</td><td class="m">Informs customer</td><td class="m">Releases, guides</td><td class="m">Provides patches</td><td class="m">Approves maintenance window</td></tr>
+          <tr><td>Regulator &amp; media in a major incident</td><td class="m">Supports</td><td class="m">Technical support</td><td class="m">—</td><td class="m">Leads</td></tr>
+          <tr><td>Service levels to the customer</td><td class="m">Owns</td><td class="m">Backs at platform level</td><td class="m">Backs Prenes.ai</td><td class="m">—</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<!-- ================= SUPPORT ================= -->
-<section class="sec glow-bg" id="support">
+<!-- ================= TRAINING ================= -->
+<section class="sec glow-bg" id="training">
   <div class="wrap">
-    <h2 class="h-sec rv">What You Get<span>as a Partner</span></h2>
-    <div class="bens">
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></div><h3>Presales &amp; demos</h3><p>Joint scoping, demos and exposure assessments with our engineers.</p></div>
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5l8 4 8-4v14l-8 4z"/></svg></div><h3>Training</h3><p>Sales and technical enablement on packages, platform and hardware.</p></div>
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></div><h3>Marketing kit</h3><p>Sales deck, sample reports and content on the 2026 cybersecurity rules.</p></div>
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg></div><h3>Technical support</h3><p>Second- and third-line support for services and hardware, including RMA.</p></div>
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5M4 19h16M8 15l4-5 3 3 4-6"/></svg></div><h3>Tiered pricing</h3><p>Partner pricing by path, shared under agreement.</p></div>
-      <div class="card ben rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c.8-3 3-5 5-5s3 1 4 2c1-1 2-2 4-2s4.2 2 5 5"/></svg></div><h3>Partner manager</h3><p>A named contact for pipeline, training and escalations.</p></div>
+    <h2 class="h-sec rv">Training<span>&amp; Certification</span></h2>
+    <p class="sub rv">Certificates are valid for two years and renewed with a short exam at each major release.</p>
+    <div class="cmp-wrap rv">
+      <table class="cmp sla">
+        <thead><tr><th style="width:26%">Course</th><th>For</th><th>Content</th><th style="width:12%">Length</th></tr></thead>
+        <tbody>
+          <tr><td>Sales &amp; solutions</td><td class="m">Partner sales teams</td><td class="m">Positioning, tiers, common BFSI questions, quoting</td><td class="m">1 day</td></tr>
+          <tr><td>Deployment engineer</td><td class="m">Partner engineers</td><td class="m">Hardware installation, tenants, log sources, acceptance</td><td class="m">3 days</td></tr>
+          <tr><td>SOC operations</td><td class="m">Partner SOC teams</td><td class="m">Triage, investigation, response, reporting</td><td class="m">3–5 days</td></tr>
+          <tr><td>Advanced detection</td><td class="m">Senior engineers</td><td class="m">Detection rules, AI models, tuning, threat hunting</td><td class="m">3 days</td></tr>
+          <tr><td>BFSI compliance</td><td class="m">Partners and consultants</td><td class="m">Frameworks, reports and audit evidence</td><td class="m">2 days</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
-
+<!-- ================= LOCATOR ================= -->
+<section class="sec black" id="locator">
+  <div class="wrap">
+    <h2 class="h-sec rv">Find<span>a Partner</span></h2>
+    <p class="sub rv">The Prenes.ai partner network is opening region by region. Tell us your country and we will connect you with a certified partner as soon as one covers it.</p>
+    <div class="regions">
+      <div class="card region rv"><span class="eyebrow">Region 1 · Opening first</span><h3>Asia-Pacific</h3><p>Fast-growing banks and fintechs and an established MSSP market. Regional partners first, then country partners.</p><a href="prenes-about.html#contact" class="more">Ask for a partner <span>↗</span></a></div>
+      <div class="card region rv"><span class="eyebrow">Region 2 · Next</span><h3>Middle East &amp; Africa</h3><p>Large integrators delivering full projects, with tenders that favour G7-origin hardware.</p><a href="prenes-about.html#contact" class="more">Register interest <span>↗</span></a></div>
+      <div class="card region rv"><span class="eyebrow">Region 3 · Later</span><h3>Europe &amp; North America</h3><p>MSSPs and service providers through the partner program, supported by our team in Canada / U.S.</p><a href="prenes-about.html#contact" class="more">Register interest <span>↗</span></a></div>
+    </div>
+    <p class="cmp-note">We do not sell into countries under Canadian or U.S. trade restrictions.</p>
+  </div>
+</section>
 <!-- ================= FAQ ================= -->
 <section class="sec black" id="faq">
   <div class="wrap faq">
     <div>
       <h2 class="rv">Partner<span class="hl">FAQ</span></h2>
       <div class="acc">
-        <div class="qa open"><button>Do we need a cybersecurity service license to partner?</button><div class="ans"><div>No. Without a license you sell through our authorized distributor (Path 2). With a license you can buy directly and contract with your customers (Path 1).</div></div></div>
-        <div class="qa"><button>Who operates the monitoring service?</button><div class="ans"><div>A licensed delivery team in Vietnam operates the platform and SOC. You focus on the customer relationship, deployment and growth.</div></div></div>
-        <div class="qa"><button>Can we sell only hardware?</button><div class="ans"><div>Yes. Partners can buy TAP, Packet Broker and Sensor Platform appliances directly from Prenes.ai and provide local warranty.</div></div></div>
-        <div class="qa"><button>How is partner pricing structured?</button><div class="ans"><div>Pricing depends on the partner path and product type. Details are shared once we sign a partner agreement.</div></div></div>
-        <div class="qa"><button>How do we get started?</button><div class="ans"><div>Send the application below. A partner manager will contact you to discuss your customers, your license status and a first joint opportunity.</div></div></div>
+        <div class="qa open"><button>Do we need a cybersecurity service license?</button><div class="ans"><div>If your country requires one for managed security services, yes — partners obtain and maintain their own local licenses.</div></div></div>
+        <div class="qa"><button>Who signs with the customer?</button><div class="ans"><div>The partner. You own the contract and service levels; Prenes.ai backs you with platform commitments and tier-3 support.</div></div></div>
+        <div class="qa"><button>Where is customer data hosted?</button><div class="ans"><div>On the Prenes.ai platform in Canada / U.S. by default. Where local law requires in-country storage, you can deploy a standard local node with our support.</div></div></div>
+        <div class="qa"><button>Is the territory exclusive?</button><div class="ans"><div>Not by default. Registered deals are price-protected for a set period to avoid channel conflict.</div></div></div>
+        <div class="qa"><button>How do we get started?</button><div class="ans"><div>Send the application below. A partner manager will discuss your SOC, customers and a first pilot.</div></div></div>
       </div>
     </div>
     <div class="faq-vis rv">
       <div class="card" style="padding:30px;transform:none">
-        <span class="eyebrow">Your first 90 days as a partner</span>
+        <span class="eyebrow">Typical customer journey</span>
         <div class="tl" style="padding:18px 0 0">
-          <div><time>Week 1–2</time><b></b><span>Agreement &amp; onboarding<small>Path, pricing, partner manager</small></span></div>
-          <div><time>Week 3–4</time><b></b><span>Enablement<small>Sales and technical training</small></span></div>
-          <div><time>Month 2</time><b></b><span>First assessments<small>2–3 existing customers</small></span></div>
-          <div class="ok"><time>Month 3</time><b></b><span>First subscription<small>Line A or combo signed</small></span></div>
+          <div><time>Aware</time><b></b><span>Threat research &amp; events<small>Prenes.ai content, your network</small></span></div>
+          <div><time>Evaluate</time><b></b><span>Assessment &amp; ROI<small>Free health check by you, references from us</small></span></div>
+          <div><time>Trial</time><b></b><span>Demo kit &amp; trial tenant<small>Small-scope pilot</small></span></div>
+          <div class="ok"><time>Grow</time><b></b><span>Renew &amp; upsell<small>Value reports, higher tiers</small></span></div>
         </div>
       </div>
     </div>
@@ -937,22 +959,23 @@ form.qf{background:#000;border:1px solid #1a2148;border-radius:14px;padding:40px
       <p class="lead rv">Tell us about your company and customers. A partner manager will get back to you within two business days.</p>
       <ol class="qsteps rv">
         <li><span>1</span><div>Send the application<small>About three minutes</small></div></li>
-        <li><span>2</span><div>Introductory call<small>Customers, license status, goals</small></div></li>
-        <li><span>3</span><div>Partner agreement<small>Path, pricing and enablement plan</small></div></li>
+        <li><span>2</span><div>Screening<small>SOC capability, licensing, references</small></div></li>
+        <li><span>3</span><div>Agreement &amp; pilot<small>Tier, training and a first customer</small></div></li>
       </ol>
     </div>
     <form class="qf rv" id="qf" novalidate>
       <div><label for="p-co">Company name <i>*</i></label><input id="p-co" required autocomplete="organization"></div>
-      <div><label for="p-city">City</label><select id="p-city"><option value="">Select…</option><option>Hanoi</option><option>Ho Chi Minh City</option><option>Da Nang</option><option>Other</option></select></div>
+      <div><label for="p-city">Country <i>*</i></label><input id="p-city" required autocomplete="country-name"></div>
       <div><label for="p-name">Contact name <i>*</i></label><input id="p-name" required autocomplete="name"></div>
       <div><label for="p-role">Job title</label><input id="p-role" autocomplete="organization-title"></div>
       <div><label for="p-email">Work email <i>*</i></label><input id="p-email" type="email" required autocomplete="email"></div>
       <div><label for="p-phone">Phone</label><input id="p-phone" type="tel" autocomplete="tel"></div>
-      <div class="full"><label for="p-lic">Cybersecurity service license in Vietnam</label><select id="p-lic"><option value="">Select…</option><option>Yes — we hold a license</option><option>In progress</option><option>No</option></select></div>
+      <div><label for="p-type">Partner type</label><select id="p-type"><option>MSSP / MDR</option><option>Reseller / integrator</option><option>Technology partner</option></select></div>
+      <div><label for="p-lic">24/7 SOC today?</label><select id="p-lic"><option value="">Select…</option><option>Yes</option><option>Planned</option><option>No</option></select></div>
       <fieldset class="full segs"><legend>Customers you serve</legend>
-        <label><input type="checkbox"> Banking</label><label><input type="checkbox"> Securities</label><label><input type="checkbox"> Insurance</label><label><input type="checkbox"> Fintech</label><label><input type="checkbox"> SMB</label><label><input type="checkbox"> Public sector</label>
+        <label><input type="checkbox"> Banking</label><label><input type="checkbox"> Insurance</label><label><input type="checkbox"> Capital markets</label><label><input type="checkbox"> Fintech</label><label><input type="checkbox"> Credit institutions</label><label><input type="checkbox"> Other regulated</label>
       </fieldset>
-      <div class="full"><label for="p-int">Interested in</label><select id="p-int"><option>Services and hardware</option><option>Services only</option><option>Hardware only</option></select></div>
+      <div class="full"><label for="p-int">Number of financial-services customers today</label><select id="p-int"><option>None yet</option><option>1–5</option><option>6–20</option><option>More than 20</option></select></div>
       <div class="full"><label for="p-msg">Anything else?</label><textarea id="p-msg" rows="3"></textarea></div>
       <label class="chk full"><input type="checkbox" required> I agree that Prenes.ai may contact me about this application and process my data under the Privacy Policy.</label>
       <div class="actions full"><button class="btn btn-light" type="submit">Submit application</button><span class="ok">Thank you — a partner manager will contact you soon.</span></div>
@@ -963,25 +986,25 @@ form.qf{background:#000;border:1px solid #1a2148;border-radius:14px;padding:40px
 <footer>
   <div class="wrap">
     <div class="f-top">
-      <div class="f-col"><h4>Solutions</h4><ul><li><a href="prenes-service-a.html">Exposure Management</a></li><li><a href="prenes-service-b.html">Monitoring &amp; Detection</a></li><li><a href="prenes-hardware.html">Hardware</a></li><li><a href="prenes-packages.html">Packages</a></li></ul></div>
-      <div class="f-col"><h4>Company</h4><ul><li><a href="prenes-about.html">About Prenes.ai</a></li><li><a href="prenes-partners.html">Partners</a></li><li><a href="prenes-about.html#careers">Careers</a></li><li><a href="prenes-contact.html">Contact</a></li></ul></div>
-      <div class="f-col"><h4>Industries &amp; Resources</h4>
+      <div class="f-col"><h4>Products &amp; Services</h4><ul><li><a href="prenes-products.html">Security Platform</a></li><li><a href="prenes-hardware.html">Hardware</a></li><li><a href="prenes-service-b.html">Managed Detection &amp; Response</a></li><li><a href="prenes-service-a.html">Exposure &amp; Compliance</a></li><li><a href="prenes-services.html#professional">Professional Services</a></li></ul></div>
+      <div class="f-col"><h4>Company</h4><ul><li><a href="prenes-about.html">About us</a></li><li><a href="prenes-partners.html">Partner Program</a></li><li><a href="prenes-solution-platform.html#trust">Trust &amp; Security</a></li><li><a href="prenes-about.html#careers">Careers</a></li><li><a href="prenes-about.html#contact">Contact</a></li></ul></div>
+      <div class="f-col"><h4>Solutions &amp; Resources</h4>
         <ul style="display:grid;grid-template-columns:1fr 1fr;gap:9px 30px">
-          <li><a href="prenes-industry-banking.html">Banking</a></li><li><a href="prenes-resources.html">Threat Advisory</a></li>
-          <li><a href="prenes-industry-securities.html">Securities</a></li><li><a href="prenes-resources.html?cat=Compliance">Compliance Guides</a></li>
-          <li><a href="prenes-industry-insurance.html">Insurance</a></li><li><a href="prenes-platform.html">Platform &amp; Data</a></li>
-          <li><a href="prenes-industry-fintech.html">Fintech</a></li><li><a href="#">FAQ</a></li>
-          <li><a href="prenes-industry-smb.html">SMB</a></li>
+          <li><a href="prenes-solution-banking.html">Banking</a></li><li><a href="prenes-resources.html">Threat Research</a></li>
+          <li><a href="prenes-solution-insurance.html">Insurance</a></li><li><a href="prenes-resources.html?cat=Compliance">Compliance Guides</a></li>
+          <li><a href="prenes-solution-securities.html">Capital Markets</a></li><li><a href="prenes-solution-platform.html">Platform</a></li>
+          <li><a href="prenes-solution-fintech.html">Fintech</a></li><li><a href="prenes-hardware.html#datasheets">Datasheets</a></li>
+          <li><a href="prenes-solution-lenders.html">Credit Institutions</a></li>
         </ul></div>
     </div>
     <div class="f-mid">
       <div>
-        <p class="f-tag">Prenes.ai — See your risk early.<br>Detect attacks in time.</p>
-        <form class="news" onsubmit="return false"><input type="email" placeholder="Enter your email to receive threat advisories" aria-label="Email"><button aria-label="Subscribe">→</button></form>
+        <p class="f-tag">Prenes.ai — Security platform for financial services.<br>Delivered by certified partners.</p>
+        <form class="news" onsubmit="return false"><input type="email" placeholder="Get threat research for financial services" aria-label="Email"><button aria-label="Subscribe">→</button></form>
       </div>
-      <div class="f-col office"><h4>Prenes.ai</h4><p>Headquarters: Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
-      <div class="f-col office"><h4>Vietnam</h4><p>Delivered with licensed strategic partners in Hanoi and Ho Chi Minh City.</p></div>
-      <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div>
+      <div class="f-col office"><h4>Headquarters</h4><p>Canada (planned) — Ontario / British Columbia</p><p>Email: contact@prenes.ai</p></div>
+      <div class="f-col office"><h4>Regions</h4><p>Asia-Pacific · Middle East &amp; Africa · Europe &amp; North America — through certified partners.</p></div>
+      <div class="soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">X</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
     <div class="f-logo">
       <svg class="waves l" viewBox="0 0 240 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#25c4f2" stroke-width="1" id="wv"></g></svg>
